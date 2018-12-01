@@ -60,36 +60,45 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1060" />
+          <entry key="java" value="1132" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1060" />
+          <entry key="JAVA" value="1132" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="1" />
+          <entry key="java" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="1" />
+          <entry key="JAVA" value="2" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/SchoolTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="39" column="23" lean-forward="true" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+            <state relative-caret-position="245">
+              <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Course.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -425,6 +434,7 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/School.java" />
         <option value="$PROJECT_DIR$/src/test/java/SchoolTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Course.java" />
       </list>
     </option>
   </component>
@@ -487,7 +497,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543697184750" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543697239800" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -542,14 +552,11 @@
       <workItem from="1543666992719" duration="1781000" />
       <workItem from="1543669908349" duration="4363000" />
       <workItem from="1543693214824" duration="266000" />
-      <workItem from="1543694311525" duration="2688000" />
+      <workItem from="1543694311525" duration="2996000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SchoolTest_SchoolConstructerTest - 2018.12.01 at 12h 31m 07s.xml">
-      <configuration name="SchoolTest.SchoolConstructerTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SchoolTest_SchoolConstructerTest - 2018.12.01 at 12h 31m 58s.xml">
       <configuration name="SchoolTest.SchoolConstructerTest" configurationId="JUnit" />
     </history-entry>
@@ -577,9 +584,12 @@
     <history-entry file="SchoolTest_SchoolConstructerTest - 2018.12.01 at 12h 43m 25s.xml">
       <configuration name="SchoolTest.SchoolConstructerTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SchoolTest_SchoolConstructerTest - 2018.12.01 at 12h 43m 50s.xml">
+      <configuration name="SchoolTest.SchoolConstructerTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9098000" />
+    <option name="totallyTimeSpent" value="9406000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -643,11 +653,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SchoolTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="39" column="23" lean-forward="true" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+        <state relative-caret-position="245">
+          <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
         </state>
       </provider>
     </entry>

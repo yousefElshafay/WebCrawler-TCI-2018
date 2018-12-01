@@ -56,4 +56,6 @@ public class SchoolTest {
         assertEquals(ExpectedName,mySchool.getName());
 
     }
+
+
 }
