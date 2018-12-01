@@ -13,7 +13,7 @@ public class SchoolTest {
         //mySchool.getName();
         String ExpectedName="Fontys";
 
-        assertEquals(ExpectedName,"Tue");
+        assertEquals(ExpectedName,mySchool.getName());
 
     }
 }
