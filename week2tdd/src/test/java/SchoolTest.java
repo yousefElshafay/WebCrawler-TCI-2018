@@ -19,16 +19,16 @@ public class SchoolTest {
      //   return cal;
 
    // }
-//    private int Y = 2015; // Year 2015
-//    private int M = 11;   // 0..11 -- December
-//    private int D = 15;   // 15th
-//    private int H = 16;   // 4:00 PM
-//    private int MN = 28;  // 4:28 PM
-//    private int S = 41;   // 4:28:41
-//    private Date d = new Date(Y-1900,M,D,H,MN,S);
+    private int Y = 1997; // Year 1997
+    private int M = 02;   // 0..11 --jan
+    private int D = 02;   // 1st
+//    private int H = 00;   //
+//    private int MN = 00;  //
+//   private int S = 00;   //
+//    private Date d = new Date(1997,M,D,H,MN,S);
 //
-//    private Calendar c = Calendar.getInstance();
-   // c.Set(Y, M, D, H, MN, S);
+    private Calendar c = Calendar.getInstance();
+
 
 
 
@@ -37,15 +37,18 @@ public class SchoolTest {
 
     public void SchoolConstructerTest(){
 
+        c.set(Y, M, D);
+         //d=c.getTime();
 //        c.set(Y, M, D, H, MN, S);
 //        d=c.getTime();
-        School mySchool=new School(name,new Date(1997,01,01,00,00));
+        School mySchool=new School(name,new Date(Y-1997,M,D));
 
         //mySchool.getName();
 
 
         String ExpectedName="Fontys";
-        Date Expecteddate=new Date(1997,01,01,00,00);
+        Date Expecteddate=new Date(Y-1997,02,02);
+
         //Date actualDate=d.setTime(10);
 
         assertEquals(Expecteddate,mySchool.getOpeningDate());
