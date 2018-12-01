@@ -6,9 +6,12 @@ import static junit.framework.TestCase.assertEquals;
 
 
 public class SchoolTest {
+    public static final String name="Fontys";
     @Test
+
     public void SchoolConstructerTest(){
-        School mySchool=new School("Fontys",new Date());
+
+        School mySchool=new School(name,new Date());
 
         //mySchool.getName();
         String ExpectedName="Fontys";
