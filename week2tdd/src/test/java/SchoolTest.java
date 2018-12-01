@@ -45,7 +45,7 @@ public class SchoolTest {
 
 
         String ExpectedName="Fontys";
-        Date Expecteddate=new Date(1997,01,01,00,01);
+        Date Expecteddate=new Date(1997,01,01,00,00);
         //Date actualDate=d.setTime(10);
 
         assertEquals(Expecteddate,mySchool.getOpeningDate());
