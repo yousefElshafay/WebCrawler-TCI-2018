@@ -45,6 +45,7 @@ public class SchoolTest {
 
         //mySchool.getName();
 
+        mySchool.addCourse(new Course(CourseName,StartDate,EndDate))
 
         String ExpectedName="Fontys";
         Date Expecteddate=new Date(Y-1997,02,02);
