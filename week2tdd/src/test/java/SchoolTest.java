@@ -62,6 +62,23 @@ public class SchoolTest {
 
 
     }
+    @Test
+    public void getCourseByNameTest() throws ParseException {
+        Date SchoolOpeningDate       = DateFormat.parse ( "01-01-1997" );
+        Date CourseStartDate       = DateFormat.parse ( "01-01-2018" );
+        Date CourseEndDate       = DateFormat.parse ( "01-01-2019" );
+     //   String CourseName;
+
+        String ExpectedName="ipv";
+        //   List<Course> list=new ArrayList<>();
+        Course myCourses=new Course("JUNIT",CourseStartDate,CourseEndDate);
+        courseList.add(myCourses);
+        School mySchool=new School("Fontys",SchoolOpeningDate,courseList);
+        String CourseName=mySchool.getCourseByName(myCourses.getName());
+        Assert.assertEquals("Expected JUNIT",ExpectedName,CourseName);
+
+
+    }
 
 
 

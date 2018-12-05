@@ -45,5 +45,15 @@ public class School {
         return "";
 
     }
+
+    public String getCourseByName(String name) {
+        for (Course c:listCourses)
+        {
+            if (c.getName()==name){
+                return c.getName();
+            }
+        }
+        return  null;
+    }
 }
 
