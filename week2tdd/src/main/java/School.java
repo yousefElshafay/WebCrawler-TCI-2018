@@ -1,17 +1,24 @@
 import java.util.Date;
+import java.util.List;
 
 public class School {
-    String Name;
-    Date OpeningDate;
+  private   String Name;
+   private Date OpeningDate;
 
-    public School(String name, Date openingDate) {
+   public List<Course> listCourses;
+
+
+    public School(String name, Date openingDate, List<Course> courseList) {
         Name = name;
         OpeningDate = openingDate;
+        this.listCourses=courseList;
+
     }
 
     public String getName() {
         return Name;
     }
+
 
     public void setName(String name) {
         Name = name;
