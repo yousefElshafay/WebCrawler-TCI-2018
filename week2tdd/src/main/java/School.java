@@ -31,5 +31,11 @@ public class School {
     public void setOpeningDate(Date openingDate) {
         OpeningDate = openingDate;
     }
+
+    public List<Course> getListCourses() {
+
+
+        return listCourses;
+    }
 }
 
