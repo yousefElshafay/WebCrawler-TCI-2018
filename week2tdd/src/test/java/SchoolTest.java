@@ -53,7 +53,7 @@ public class SchoolTest {
     @Test
             (expected = SchoolException.class)
     public void SchoolNameAndDateException(){
-        
+
     }
 
 
