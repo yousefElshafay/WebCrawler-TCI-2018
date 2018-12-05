@@ -1,3 +1,4 @@
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.text.ParseException;
@@ -11,6 +12,8 @@ import static org.junit.Assert.assertThat;
 
 public class SchoolTest {
     public static final String name="Fontys";
+    SimpleDateFormat DateFormat = new SimpleDateFormat("MM-dd-yyyy");
+    String Date = DateFormat.format( new Date()   );
 
 
     List<Course> courseList=new ArrayList<>();
@@ -24,10 +27,6 @@ public class SchoolTest {
 
     public void SchoolConstructerTest() throws ParseException {
 
-
-
-        SimpleDateFormat DateFormat = new SimpleDateFormat("MM-dd-yyyy");
-        String Date = DateFormat.format( new Date()   );
         Date SchoolOpeningDate       = DateFormat.parse ( "01-01-1997" );
         Date CourseStartDate       = DateFormat.parse ( "01-01-2018" );
         Date CourseEndDate       = DateFormat.parse ( "01-01-2019" );
@@ -52,7 +51,12 @@ public class SchoolTest {
     }
     @Test
             (expected = SchoolException.class)
-    public void SchoolNameAndDateException(){
+    public void SchoolNameAndDateException() throws ParseException,SchoolException {
+
+        Date SchoolOpeningDate       = DateFormat.parse ( "01-01-1997" );
+        School mySchool=new School("Fontys",SchoolOpeningDate,courseList);
+        Assert.assertEquals("Expected Exception",mySchool.CheckNullValues());
+
 
     }
 
