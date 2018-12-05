@@ -33,7 +33,7 @@ public class SchoolTest {
         Date CourseEndDate       = DateFormat.parse ( "01-01-2019" );
         String CourseName;
 
-        List<Course> list=new ArrayList<>();
+     //   List<Course> list=new ArrayList<>();
         Course myCourses=new Course("JUNIT",CourseStartDate,CourseEndDate);
         courseList.add(myCourses);
         School mySchool=new School("Fontys",SchoolOpeningDate,courseList);
@@ -41,7 +41,7 @@ public class SchoolTest {
         String ExpectedName="Fontys";
         assertEquals(SchoolOpeningDate,mySchool.getOpeningDate());
         assertEquals(ExpectedName,mySchool.getName());
-        assertEquals("testing list values",list,mySchool.getListCourses());
+        assertEquals("testing list values",courseList,mySchool.getListCourses());
 
     }
     @Test
