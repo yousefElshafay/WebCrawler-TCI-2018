@@ -75,7 +75,7 @@ public class SchoolTest {
         courseList.add(myCourses);
         School mySchool=new School("Fontys",SchoolOpeningDate,courseList);
         String CourseName=mySchool.getCourseByName(myCourses.getName());
-        Assert.assertEquals("Expected JUNIT",ExpectedName,CourseName);
+        Assert.assertEquals("Expected JUNIT","JUNIT",CourseName);
 
 
     }
