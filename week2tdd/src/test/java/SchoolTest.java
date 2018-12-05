@@ -54,8 +54,9 @@ public class SchoolTest {
     public void SchoolNameAndDateException() throws ParseException,SchoolException {
 
         Date SchoolOpeningDate       = DateFormat.parse ( "01-01-1997" );
-        School mySchool=new School("Fontys",SchoolOpeningDate,courseList);
-        Assert.assertEquals("Expected School Exception",mySchool.CheckNullValues());
+        School mySchool=new School("",SchoolOpeningDate,courseList);
+       // System.out.println(mySchool.getName());
+        Assert.assertEquals("Expected School Exception",mySchool.CheckNullValues(mySchool));
 
 
     }
