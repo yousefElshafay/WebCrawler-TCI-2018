@@ -61,12 +61,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2815" />
+          <entry key="java" value="2819" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2815" />
+          <entry key="JAVA" value="2819" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -87,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/SchoolTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="260">
-              <caret line="77" column="51" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="51" />
+              <caret line="77" column="57" selection-start-line="77" selection-start-column="57" selection-end-line="77" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -510,7 +510,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544042622849" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544042661797" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -593,14 +593,11 @@
       <workItem from="1543669908349" duration="4363000" />
       <workItem from="1543693214824" duration="266000" />
       <workItem from="1543694311525" duration="5070000" />
-      <workItem from="1544019806828" duration="5506000" />
+      <workItem from="1544019806828" duration="5550000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SchoolTest_SchoolNameAndDateException - 2018.12.05 at 12h 27m 02s.xml">
-      <configuration name="SchoolTest.SchoolNameAndDateException" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SchoolTest_SchoolNameAndDateException - 2018.12.05 at 12h 28m 26s.xml">
       <configuration name="SchoolTest.SchoolNameAndDateException" configurationId="JUnit" />
     </history-entry>
@@ -628,9 +625,12 @@
     <history-entry file="SchoolTest_getCourseByNameTest - 2018.12.05 at 12h 43m 25s.xml">
       <configuration name="SchoolTest.getCourseByNameTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SchoolTest_getCourseByNameTest - 2018.12.05 at 12h 43m 46s.xml">
+      <configuration name="SchoolTest.getCourseByNameTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16986000" />
+    <option name="totallyTimeSpent" value="17030000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -705,7 +705,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/SchoolTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
-          <caret line="77" column="51" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="51" />
+          <caret line="77" column="57" selection-start-line="77" selection-start-column="57" selection-end-line="77" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
