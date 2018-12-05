@@ -47,6 +47,12 @@ public class SchoolTest {
     @Test
     public void GetCourseByName(){
 
+
+        
+    }
+    @Test
+            (expected = SchoolException.class)
+    public void SchoolNameAndDateException(){
         
     }
 
