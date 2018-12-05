@@ -69,13 +69,13 @@ public class SchoolTest {
         Date CourseEndDate       = DateFormat.parse ( "01-01-2019" );
      //   String CourseName;
 
-        String ExpectedName="ipv";
+        String ExpectedName="JUNIT";
         //   List<Course> list=new ArrayList<>();
         Course myCourses=new Course("JUNIT",CourseStartDate,CourseEndDate);
         courseList.add(myCourses);
         School mySchool=new School("Fontys",SchoolOpeningDate,courseList);
         String CourseName=mySchool.getCourseByName(myCourses.getName());
-        Assert.assertEquals("Expected JUNIT",ExpectedName,CourseName);
+        Assert.assertEquals("Expected JUNIT","JUNIT",CourseName);
 
 
     }
