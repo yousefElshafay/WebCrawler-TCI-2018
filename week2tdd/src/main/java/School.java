@@ -37,5 +37,13 @@ public class School {
 
         return listCourses;
     }
+
+    public String CheckNullValues() throws SchoolException {
+        if (getName()==null||getOpeningDate()==null){
+            throw  new SchoolException("School name or date is null");
+        }
+        return "";
+
+    }
 }
 
