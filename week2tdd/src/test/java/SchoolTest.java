@@ -100,10 +100,10 @@ public class SchoolTest {
             (expected = CourseException.class)
     public void CourseDateShouldBeAfterSchoolDate() throws ParseException,CourseException {
 
-        Date SchoolOpeningDate       = DateFormat.parse ( "01-01-1997" );
+        Date SchoolOpeningDate       = DateFormat.parse ( "01-02-1997" );
       //  Date newDate=SchoolOpeningDate;
 
-        Date CourseStartDate       = DateFormat.parse ( "01-02-1997" );
+        Date CourseStartDate       = DateFormat.parse ( "01-01-1997" );
         Date CourseEndDate       = DateFormat.parse ( "01-01-2019" );
 
 
