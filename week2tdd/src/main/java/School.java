@@ -71,5 +71,11 @@ public class School {
 
     }
 
+    public String CheckDates(School mySchool, Course myCourses) throws CourseException {
+        if (mySchool.getOpeningDate().after(myCourses.getStartDate())){
+            throw new CourseException("School date is after course start date ERRRROOOOR");
+        }
+        return  "";
+    }
 }
 
