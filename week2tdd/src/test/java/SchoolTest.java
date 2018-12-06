@@ -101,7 +101,7 @@ public class SchoolTest {
     public void CourseDateShouldBeAfterSchoolDate() throws ParseException,CourseException {
 
         Date SchoolOpeningDate       = DateFormat.parse ( "01-02-1997" );
-      //  Date newDate=SchoolOpeningDate;
+        Date newDate=SchoolOpeningDate;
 
         Date CourseStartDate       = DateFormat.parse ( "01-01-1997" );
         Date CourseEndDate       = DateFormat.parse ( "01-01-2019" );
@@ -110,7 +110,7 @@ public class SchoolTest {
 
         Course myCourses=new Course("JUNIT",CourseStartDate,CourseEndDate);
 
-        School mySchool=new School("",SchoolOpeningDate,courseList);
+        School mySchool=new School("",newDate,courseList);
 
 
         Assert.assertEquals("Expected Course Exception",mySchool.CheckDates(mySchool,myCourses));
