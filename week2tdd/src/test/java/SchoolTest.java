@@ -92,7 +92,21 @@ public class SchoolTest {
         //courseList.add(myCourses);
         School mySchool=new School("Fontys",SchoolOpeningDate,courseList);
         mySchool.addCourse(myCourses);
-        Assert.assertEquals("", mySchool.addCourse(myCourses));
+        Assert.assertEquals("",myCourses, mySchool.addCourse(myCourses));
+
+    }
+
+    @Test
+            (expected = CourseException.class)
+    public void CourseDateShouldBeAfterSchoolDate() throws ParseException,CourseException {
+
+        Date SchoolOpeningDate       = DateFormat.parse ( "01-01-1997" );
+        Date newDate=SchoolOpeningDate;
+        School mySchool=new School("",newDate,courseList);
+
+        // System.out.println(mySchool.getName());
+        Assert.assertEquals("Expected School Exception",mySchool.CheckDates(mySchool));
+
 
     }
 

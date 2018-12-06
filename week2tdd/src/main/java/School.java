@@ -56,12 +56,20 @@ public class School {
         return  null;
     }
 
+    Course c;
+    public  School(Course myCourses){
+        c=myCourses;
+
+}
     public School addCourse(Course myCourses) {
 //        for (Course c:myCourses){
 //
 //        }
-        return null;
+        //School school=new Course(myCourses);
+        School school=new School(myCourses);
+        return  school;
 
     }
+
 }
 
