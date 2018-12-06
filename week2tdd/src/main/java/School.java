@@ -55,5 +55,13 @@ public class School {
         }
         return  null;
     }
+
+    public School addCourse(Course myCourses) {
+//        for (Course c:myCourses){
+//
+//        }
+        return null;
+
+    }
 }
 
