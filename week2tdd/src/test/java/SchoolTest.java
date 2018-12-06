@@ -25,7 +25,7 @@ public class SchoolTest {
 
     @Test
 
-    public void SchoolConstructerTest() throws ParseException {
+    public void SchoolTest() throws ParseException {
 
         Date SchoolOpeningDate       = DateFormat.parse ( "01-01-1997" );
         Date CourseStartDate       = DateFormat.parse ( "01-01-2018" );
