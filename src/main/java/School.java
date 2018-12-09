@@ -15,7 +15,7 @@ public class School {
 
     public boolean AddCourse(Course newcourse)
     {
-        if (Courses.add(newcourse)){
+        if (courses.add(newcourse)){
           return true;
          }
          else
