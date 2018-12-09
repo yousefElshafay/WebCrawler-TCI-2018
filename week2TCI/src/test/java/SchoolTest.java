@@ -33,6 +33,7 @@ public class SchoolTest {
 //
             Assert.assertTrue(!name.isEmpty() && _opening_date != null
             );
+
         }
     @Test
     public void Name_date_Null_Allowed() throws CourseDataException {
@@ -60,7 +61,7 @@ public class SchoolTest {
         school = new School("Fontys University of Applied Science",
                 new GregorianCalendar(2018, Calendar.SEPTEMBER, 3));
 
-        ArrayList<Course> courses = school.addCourse(new Course("PROEP",
+        ArrayList<Course> courses = school.addCourse(new Course("Math",
                 new GregorianCalendar(2018, Calendar.SEPTEMBER, 4),
                 new GregorianCalendar(2019, Calendar.JANUARY, 10))
         );
