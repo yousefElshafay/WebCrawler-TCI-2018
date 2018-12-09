@@ -72,7 +72,29 @@ public class SchoolTest {
     }
 
 
+    @Test
+    public void CourseDate_After_SchoolDate(){
+        //
+        School school = null;
+        Course course = null;
 
+        try {
+            school = new School("Fontys University of Applied Science",
+                    new GregorianCalendar(2018, Calendar.SEPTEMBER, 3));
+
+            //
+            course = new Course("PROEP",
+                    new GregorianCalendar(2018, Calendar.SEPTEMBER, 4),
+                    new GregorianCalendar(2019, Calendar.JANUARY, 10));
+
+            school.addCourse(course);
+        } catch (Exception exc){
+
+        }
+
+        //
+        Assert.assertTrue(course.getBegin_date().after(school.getOpeningDate()));
+    }
 
 
 }
