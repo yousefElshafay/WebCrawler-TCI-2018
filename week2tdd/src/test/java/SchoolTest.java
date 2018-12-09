@@ -107,7 +107,7 @@ public class SchoolTest {
 
 
 
-        Course myCourses=new Course("JUNItttt",CourseStartDate,CourseEndDate);
+        Course myCourses=new Course("JUNIt",CourseStartDate,CourseEndDate);
 
         School mySchool=new School("",newDate,courseList);
 
