@@ -8,5 +8,20 @@ public class School {
     private List<Course> courses ;
 
 
+    public School(String schoolname, Date openingDate) {
+        Schoolname = schoolname;
+        this.openingDate = openingDate;
+    }
+
+    public boolean AddCourse(Course newcourse)
+    {
+        if (Courses.add(newcourse)){
+          return true;
+         }
+         else
+        {
+            return false;
+        }
+    }
 
 }
