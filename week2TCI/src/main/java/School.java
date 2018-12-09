@@ -11,6 +11,11 @@ public class School {
 
     public School(String name, GregorianCalendar openingDate) throws CourseDataException {
 
+        if(!name.isEmpty() && openingDate != null) {
+            this.name = name;
+            this.openingDate = openingDate.getTime();
+
+        }
     }
 
     public String getName() {
