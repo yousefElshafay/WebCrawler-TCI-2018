@@ -44,7 +44,7 @@ public class SchoolTest {
         Date opening_date = school.getOpeningDate();
 
 
-        Assert.assertTrue(name == null && opening_date == null);
+        Assert.assertTrue(name != null && opening_date != null);
     }
 
 
