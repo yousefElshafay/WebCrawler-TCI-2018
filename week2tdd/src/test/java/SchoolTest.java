@@ -20,12 +20,11 @@ public class SchoolTest {
 
 
 
-    public SchoolTest() throws ParseException {
-    }
+
 
     @Test
 
-    public void SchoolTest() throws ParseException {
+    public void schoolTest() throws ParseException {
 
         Date SchoolOpeningDate       = DateFormat.parse ( "01-01-1997" );
         Date CourseStartDate       = DateFormat.parse ( "01-01-2018" );
@@ -108,7 +107,7 @@ public class SchoolTest {
 
 
 
-        Course myCourses=new Course("JUNIT",CourseStartDate,CourseEndDate);
+        Course myCourses=new Course("JUNItttt",CourseStartDate,CourseEndDate);
 
         School mySchool=new School("",newDate,courseList);
 
