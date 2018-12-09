@@ -39,7 +39,7 @@ public class School {
     }
 
     public String CheckNullValues(School mySchool) throws SchoolException {
-        if (mySchool.getName()==""||mySchool.getOpeningDate()==null){
+        if (mySchool.getName().equals("")||mySchool.getOpeningDate()==null){
             throw  new SchoolException("School name or date is null");
         }
         return "";
@@ -61,15 +61,7 @@ public class School {
         c=myCourses;
 
 }
-    public School addCourse(Course myCourses) {
-//        for (Course c:myCourses){
-//
-//        }
-        //School school=new Course(myCourses);
-        School school=new School(myCourses);
-        return  school;
 
-    }
 
     public String CheckDates(School mySchool, Course myCourses) throws CourseException {
         if (mySchool.getOpeningDate().after(myCourses.getStartDate())){

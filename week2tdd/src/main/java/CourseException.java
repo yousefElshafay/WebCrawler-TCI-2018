@@ -1,4 +1,6 @@
 public class CourseException extends Exception {
 
-    public CourseException(String messsgae){}
+    public CourseException(String messsgae){
+        super(messsgae);
+    }
 }

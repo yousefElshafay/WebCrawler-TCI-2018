@@ -78,22 +78,7 @@ public class SchoolTest {
 
 
     }
-    @Test
-    public void addCourseTest() throws ParseException {
-        Date SchoolOpeningDate       = DateFormat.parse ( "01-01-1997" );
-        Date CourseStartDate       = DateFormat.parse ( "01-01-2018" );
-        Date CourseEndDate       = DateFormat.parse ( "01-01-2019" );
-        //   String CourseName;
 
-        String ExpectedName="JUNIT";
-        //   List<Course> list=new ArrayList<>();
-        Course myCourses=new Course("JUNIT",CourseStartDate,CourseEndDate);
-        //courseList.add(myCourses);
-        School mySchool=new School("Fontys",SchoolOpeningDate,courseList);
-        mySchool.addCourse(myCourses);
-        Assert.assertEquals("",myCourses, mySchool.addCourse(myCourses));
-
-    }
 
     @Test
             (expected = CourseException.class)
