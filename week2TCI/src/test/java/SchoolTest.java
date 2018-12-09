@@ -35,15 +35,17 @@ public class SchoolTest {
         }
     @Test
     public void Name_date_Null_Allowed() throws CourseDataException {
-
+        // Arrange
         School school;
+
+        // Act
         school = new School("Fontys University of Applied Science",
                 new GregorianCalendar(2018, Calendar.SEPTEMBER, 3));
 
         String name = school.getName();
         Date opening_date = school.getOpeningDate();
 
-
+        //Assert
         Assert.assertTrue(name != null && opening_date != null);
     }
 
