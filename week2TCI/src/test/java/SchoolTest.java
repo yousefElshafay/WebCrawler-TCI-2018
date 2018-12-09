@@ -1,6 +1,7 @@
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -49,7 +50,25 @@ public class SchoolTest {
         Assert.assertTrue(name != null && opening_date != null);
     }
 
+    @Test
+    public void AddCourse_school() throws CourseDataException, DuplicateCourseException {
 
+        School school;
+        int expected_size = 2;
+
+
+        school = new School("Fontys University of Applied Science",
+                new GregorianCalendar(2018, Calendar.SEPTEMBER, 3));
+
+        ArrayList<Course> courses = school.addCourse(new Course("PROEP",
+                new GregorianCalendar(2018, Calendar.SEPTEMBER, 4),
+                new GregorianCalendar(2019, Calendar.JANUARY, 10))
+        );
+
+        int actual_size = courses.size();
+
+        Assert.assertEquals(expected_size, actual_size);
+    }
 
 
 
