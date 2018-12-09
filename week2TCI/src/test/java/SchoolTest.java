@@ -83,7 +83,7 @@ public class SchoolTest {
                     new GregorianCalendar(2018, Calendar.SEPTEMBER, 3));
 
             //
-            course = new Course("PROEP",
+            course = new Course("math",
                     new GregorianCalendar(2018, Calendar.SEPTEMBER, 4),
                     new GregorianCalendar(2019, Calendar.JANUARY, 10));
 
