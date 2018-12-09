@@ -1,13 +1,10 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.GregorianCalendar;
-import org.junit.Assert;
-import org.junit.Test;
 
-import java.util.*;
 public class SchoolTest {
     /**
      * REQUIREMENTS:
@@ -23,7 +20,7 @@ public class SchoolTest {
 
 
         @Test
-        public void collection_of_courses() throws CourseDataException {
+        public void collection_of_courses_with_NameandDate() throws CourseDataException {
             // Arrange
             School school;
             GregorianCalendar opening_date_School = new GregorianCalendar(2018, Calendar.SEPTEMBER, 3);
@@ -33,7 +30,7 @@ public class SchoolTest {
             String name = school.getName();
             Date _opening_date = school.getOpeningDate();
 //
-            Assert.assertTrue(!name.isBlank() && _opening_date != null
+            Assert.assertTrue(!name.isEmpty() && _opening_date != null
             );
         }
 
