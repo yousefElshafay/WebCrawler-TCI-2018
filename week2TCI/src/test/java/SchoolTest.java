@@ -53,11 +53,11 @@ public class SchoolTest {
 
     @Test
     public void AddCourse_school() throws CourseDataException, DuplicateCourseException {
-
+            // Arrange
         School school;
         int expected_size = 2;
 
-
+            //Act
         school = new School("Fontys University of Applied Science",
                 new GregorianCalendar(2018, Calendar.SEPTEMBER, 3));
 
@@ -67,7 +67,7 @@ public class SchoolTest {
         );
 
         int actual_size = courses.size();
-
+        //assert
         Assert.assertEquals(expected_size, actual_size);
     }
 
