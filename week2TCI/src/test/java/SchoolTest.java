@@ -97,7 +97,7 @@ public class SchoolTest {
     }
 
     @Test
-    public void uniquCourseName() throws  CourseDataException {
+    public void uniquCourseName() throws  CourseDataException, DuplicateCourseException {
         //
         School school = null;
         Course course = null;
