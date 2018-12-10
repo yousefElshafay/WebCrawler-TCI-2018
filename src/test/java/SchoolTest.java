@@ -45,6 +45,17 @@ public class SchoolTest {
         Assert.assertEquals(parseDate("1993-09-01"),fontys.getOpeningDate());
     }
 
+    @Test
+    public void CheckSchoolNameNotnull()
+    {
+        Assert.assertNotNull(fontys.getSchoolname());
+    }
+
+    @Test
+    public void CheckSchoolOpeningDateNotnull()
+    {
+        Assert.assertNotNull(fontys.getOpeningDate());
+    }
 
     @Test
     public void setCourses() {

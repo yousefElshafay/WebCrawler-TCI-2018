@@ -98,12 +98,16 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/SchoolTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="381">
+              <caret line="56" column="52" selection-start-line="56" selection-start-column="52" selection-end-line="56" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1064#1065#0" expanded="true" />
                 <element signature="e#1085#1086#0" expanded="true" />
+                <element signature="e#1318#1319#0" expanded="true" />
+                <element signature="e#1339#1340#0" expanded="true" />
+                <element signature="e#1443#1444#0" expanded="true" />
+                <element signature="e#1489#1490#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -222,7 +226,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544405718017" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544405906142" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -317,7 +321,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544394930769</updated>
-      <workItem from="1544394939363" duration="9847000" />
+      <workItem from="1544394939363" duration="10032000" />
     </task>
     <task id="LOCAL-00001" summary="add schoolclass">
       <created>1544398683011</created>
@@ -403,13 +407,17 @@
       <option name="project" value="LOCAL" />
       <updated>1544405690898</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add course pass with no exceptions">
+      <created>1544405743251</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1544405743251</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SchoolTest - 2018.12.10 at 02h 15m 00s.xml">
-      <configuration name="SchoolTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SchoolTest - 2018.12.10 at 02h 16m 29s.xml">
       <configuration name="SchoolTest" configurationId="JUnit" />
     </history-entry>
@@ -437,9 +445,12 @@
     <history-entry file="SchoolTest - 2018.12.10 at 02h 34m 08s.xml">
       <configuration name="SchoolTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SchoolTest - 2018.12.10 at 02h 35m 24s.xml">
+      <configuration name="SchoolTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9847000" />
+    <option name="totallyTimeSpent" value="10032000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="842" extended-state="6" />
@@ -494,7 +505,8 @@
     <MESSAGE value="Getcourses test fails" />
     <MESSAGE value="Getcourses test pass" />
     <MESSAGE value="date exception raised with a failed test for adding a course" />
-    <option name="LAST_COMMIT_MESSAGE" value="date exception raised with a failed test for adding a course" />
+    <MESSAGE value="add course pass with no exceptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="add course pass with no exceptions" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/gradlew">
@@ -580,12 +592,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SchoolTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="381">
+          <caret line="56" column="52" selection-start-line="56" selection-start-column="52" selection-end-line="56" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1064#1065#0" expanded="true" />
             <element signature="e#1085#1086#0" expanded="true" />
+            <element signature="e#1318#1319#0" expanded="true" />
+            <element signature="e#1339#1340#0" expanded="true" />
+            <element signature="e#1443#1444#0" expanded="true" />
+            <element signature="e#1489#1490#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -642,7 +658,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>main|Fontys.TCI.TCIWeek2</last-edited>
+          <last-edited>test|Fontys.TCI.TCIWeek2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
