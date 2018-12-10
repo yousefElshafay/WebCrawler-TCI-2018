@@ -53,14 +53,17 @@ public class School {
         }
     }
 
-    public Course GetCourseByname(String coursename)
+    public Course GetCourseByname(String coursename) throws nocoursefoundException
     {
         for (Course existingcourse: courses)
         {
             if (existingcourse.getCoursename()==coursename)
             {
-                //return existingcourse;
+                return existingcourse;
             }
+            else
+                throw new nocoursefoundException();
+
         }
         return null;
     }

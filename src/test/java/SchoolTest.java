@@ -55,8 +55,8 @@ public class SchoolTest {
 
 
     @Test
-    public void getCourseByname() {
-        Assert.assertNotNull(fontys.GetCourseByname("TCI"));
+    public void getCourseByname() throws nocoursefoundException {
+        //Assert.assertNull(fontys.GetCourseByname("TCI"));
         Assert.assertEquals(TCI,fontys.GetCourseByname("TCI"));
     }
 }
