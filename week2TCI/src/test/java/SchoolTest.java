@@ -74,7 +74,7 @@ public class SchoolTest {
 
     @Test
     public void CourseDate_After_SchoolDate(){
-        //
+        //Arrange
         School school = null;
         Course course = null;
 
@@ -82,7 +82,7 @@ public class SchoolTest {
             school = new School("Fontys University of Applied Science",
                     new GregorianCalendar(2018, Calendar.SEPTEMBER, 3));
 
-            //
+            //Act
             course = new Course("math",
                     new GregorianCalendar(2018, Calendar.SEPTEMBER, 4),
                     new GregorianCalendar(2019, Calendar.JANUARY, 10));
@@ -92,7 +92,7 @@ public class SchoolTest {
 
         }
 
-        //
+        //Asset
         Assert.assertTrue(course.getBegin_date().after(school.getOpeningDate()));
     }
 
