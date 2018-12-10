@@ -12,11 +12,22 @@ public class School {
     public School(String schoolname, Date openingDate) {
         Schoolname = schoolname;
         this.openingDate = openingDate;
+        courses = new ArrayList<>();
+
     }
 
-    public boolean AddCourse(Course newcourse)
+    public boolean AddCourse(Course newcourse) throws DuplicateCourseException
     {
-        courses = new ArrayList<>();
+        // check if newcoursename  is already present
+        for (Course existingcourse: courses)
+        {
+                if (existingcourse.getCoursename() == newcourse.getCoursename())
+                {
+                    throw  new DuplicateCourseException();
+                }
+        }
+
+
         if (courses.add(newcourse)){
           return true;
          }

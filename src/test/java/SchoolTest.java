@@ -1,6 +1,7 @@
 import javafx.scene.input.DataFormat;
 import org.junit.Assert;
 import org.junit.Test;
+import sun.util.calendar.LocalGregorianCalendar;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -21,11 +22,17 @@ public class SchoolTest {
         }
     }
     // create school class
-    Date newdate = parseDate("2018-09-01");
+    Date newdate = parseDate("1993-09-01");
     School fontys = new School("fontys", newdate);
     @Test
-    public void addCourse() {
-        Course TCI = new Course();
-        Assert.assertTrue(fontys.AddCourse(TCI));
+    public void addCourse() throws DuplicateCourseException {
+
+        // create course
+        Date coursestartdate = parseDate("2018-09-01");
+        Date courseenddate = parseDate("2018-011-16");
+
+
+        Course TCI = new Course("TCI",coursestartdate,courseenddate);
+        Assert.assertEquals(true, fontys.AddCourse(TCI));
     }
 }
