@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80474587-aad9-4e46-9d55-2d3433ab59d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/DuplicateCourseException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Course.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/School.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/School.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SchoolTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SchoolTest.java" afterDir="false" />
     </list>
@@ -33,13 +31,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/School.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="329">
+              <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#403#404#0" expanded="true" />
+                <element signature="e#437#438#0" expanded="true" />
+                <element signature="e#489#490#0" expanded="true" />
+                <element signature="e#527#528#0" expanded="true" />
+                <element signature="e#564#565#0" expanded="true" />
+                <element signature="e#597#598#0" expanded="true" />
+                <element signature="e#637#638#0" expanded="true" />
+                <element signature="e#667#668#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/SchoolTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="35" column="50" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="50" />
+            <state relative-caret-position="381">
+              <caret line="61" column="1" lean-forward="true" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,15 +103,6 @@
               <folding>
                 <element signature="e#10750#10751#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/CourseTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -138,12 +135,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/test/java/CourseTestTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/CourseTest.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/DuplicateCourseException.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SchoolTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Course.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CourseTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/School.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SchoolTest.java" />
       </list>
     </option>
   </component>
@@ -209,7 +206,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544401585145" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544402346339" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -246,7 +243,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.SchoolTest.getCourseByname">
+    <configuration name="SchoolTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Fontys.TCI.TCIWeek2.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SchoolTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SchoolTest.addCourse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Fontys.TCI.TCIWeek2.test" />
       <option name="PACKAGE_NAME" value="" />
@@ -257,8 +262,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SchoolTest.getCourseByname" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Fontys.TCI.TCIWeek2.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SchoolTest" />
+      <option name="METHOD_NAME" value="getCourseByname" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SchoolTest.getCourseByname" />
+        <item itemvalue="JUnit.SchoolTest" />
         <item itemvalue="JUnit.SchoolTest.addCourse" />
       </list>
     </recent_temporary>
@@ -273,7 +290,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544394930769</updated>
-      <workItem from="1544394939363" duration="5729000" />
+      <workItem from="1544394939363" duration="6479000" />
     </task>
     <task id="LOCAL-00001" summary="add schoolclass">
       <created>1544398683011</created>
@@ -303,22 +320,24 @@
       <option name="project" value="LOCAL" />
       <updated>1544400494726</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Check for duplicate course name Test pass">
+      <created>1544401605935</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1544401605935</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add School  getter &amp; setters">
+      <created>1544401832874</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1544401832874</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SchoolTest_addCourse - 2018.12.10 at 00h 49m 56s.xml">
-      <configuration name="SchoolTest.addCourse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SchoolTest_addCourse - 2018.12.10 at 00h 52m 51s.xml">
-      <configuration name="SchoolTest.addCourse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SchoolTest_addCourse - 2018.12.10 at 00h 59m 00s.xml">
-      <configuration name="SchoolTest.addCourse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SchoolTest_addCourse - 2018.12.10 at 00h 59m 49s.xml">
-      <configuration name="SchoolTest.addCourse" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SchoolTest_addCourse - 2018.12.10 at 01h 01m 28s.xml">
       <configuration name="SchoolTest.addCourse" configurationId="JUnit" />
     </history-entry>
@@ -331,9 +350,27 @@
     <history-entry file="SchoolTest_addCourse - 2018.12.10 at 01h 25m 23s.xml">
       <configuration name="SchoolTest.addCourse" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SchoolTest_addCourse - 2018.12.10 at 01h 26m 18s.xml">
+      <configuration name="SchoolTest.addCourse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SchoolTest_addCourse - 2018.12.10 at 01h 30m 07s.xml">
+      <configuration name="SchoolTest.addCourse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SchoolTest_addCourse - 2018.12.10 at 01h 35m 53s.xml">
+      <configuration name="SchoolTest.addCourse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SchoolTest - 2018.12.10 at 01h 36m 06s.xml">
+      <configuration name="SchoolTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SchoolTest - 2018.12.10 at 01h 36m 48s.xml">
+      <configuration name="SchoolTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SchoolTest - 2018.12.10 at 01h 37m 47s.xml">
+      <configuration name="SchoolTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5729000" />
+    <option name="totallyTimeSpent" value="6479000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="842" extended-state="6" />
@@ -380,7 +417,9 @@
     <MESSAGE value="addcourse test fails due to missing of class course" />
     <MESSAGE value="Failed test due to date deprecation" />
     <MESSAGE value="Add course test pass after initializing objects" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add course test pass after initializing objects" />
+    <MESSAGE value="Check for duplicate course name Test pass" />
+    <MESSAGE value="add School  getter &amp; setters" />
+    <option name="LAST_COMMIT_MESSAGE" value="add School  getter &amp; setters" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/gradlew">
@@ -396,12 +435,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CourseTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/DuplicateCourseException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CourseTest.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/Date.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -410,13 +452,6 @@
           <folding>
             <element signature="e#10750#10751#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DuplicateCourseException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -441,20 +476,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SchoolTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/School.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="35" column="50" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="50" />
+        <state relative-caret-position="329">
+          <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
+            <element signature="e#597#598#0" expanded="true" />
+            <element signature="e#637#638#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/School.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SchoolTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="381">
+          <caret line="61" column="1" lean-forward="true" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -513,7 +556,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>test|Fontys.TCI.TCIWeek2</last-edited>
+          <last-edited>main|Fontys.TCI.TCIWeek2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

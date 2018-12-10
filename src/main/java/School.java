@@ -53,4 +53,16 @@ public class School {
         }
     }
 
+    public Course GetCourseByname(String coursename)
+    {
+        for (Course existingcourse: courses)
+        {
+            if (existingcourse.getCoursename()==coursename)
+            {
+                //return existingcourse;
+            }
+        }
+        return null;
+    }
+
 }

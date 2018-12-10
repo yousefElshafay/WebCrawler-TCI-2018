@@ -12,6 +12,7 @@ import static org.junit.Assert.*;
 public class SchoolTest {
 
 
+    Course TCI;
     // parse date to avoid deprecation erro
 
     public static Date parseDate(String date) {
@@ -32,7 +33,30 @@ public class SchoolTest {
         Date courseenddate = parseDate("2018-011-16");
 
 
-        Course TCI = new Course("TCI",coursestartdate,courseenddate);
+         TCI = new Course("TCI",coursestartdate,courseenddate);
         Assert.assertEquals(true, fontys.AddCourse(TCI));
+    }
+
+    @Test
+    public void getOpeningDate() {
+    }
+
+    @Test
+    public void setCourses() {
+    }
+
+    @Test
+    public void getSchoolname() {
+    }
+
+    @Test
+    public void getCourses() {
+    }
+
+
+    @Test
+    public void getCourseByname() {
+        Assert.assertNotNull(fontys.GetCourseByname("TCI"));
+        Assert.assertEquals(TCI,fontys.GetCourseByname("TCI"));
     }
 }
