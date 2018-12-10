@@ -142,5 +142,22 @@ public class SchoolTest {
         Assert.assertArrayEquals(expected_course_names.toArray(), actual_course_names.toArray());
     }
 
+    @Test
+    public void CopiesAllCourses() throws CourseDataException, DuplicateCourseException {
+        // Arrange
+        School school = null;
+        Course course = null;
+        ArrayList<Course> courses = null;
 
+        // Act
+        school = new School("Fontys University of Applied Science",
+                new GregorianCalendar(2018, Calendar.SEPTEMBER, 3));
+
+        courses = school.addCourse(new Course("PROEP",
+                new GregorianCalendar(2018, Calendar.SEPTEMBER, 4),
+                new GregorianCalendar(2019, Calendar.JANUARY, 10)
+        ));
+
+        // Assert
+    }
 }
