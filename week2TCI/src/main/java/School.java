@@ -59,7 +59,10 @@ public class School {
     }
 
     public ArrayList<String> getAllCourseNames(){
-
-        return null;
+        ArrayList<String> course_names = new ArrayList<>();
+        for (Course c: this.courses){
+            course_names.add(c.getName());
+        }
+        return course_names;
     }
 }
