@@ -96,7 +96,7 @@ public class SchoolTest {
         Assert.assertTrue(course.getBegin_date().after(school.getOpeningDate()));
     }
 
-    @Test
+    @Test //(expected = DuplicateCourseException.class)
     public void uniquCourseName() throws  CourseDataException, DuplicateCourseException {
         //
         School school = null;
@@ -114,4 +114,33 @@ public class SchoolTest {
         // Assert
         courses = school.addCourse(course);
     }
+
+
+    @Test
+    public void GetAllCourses() throws CourseDataException, DuplicateCourseException {
+        // Arrange
+        School school = null;
+        Course course = null;
+        ArrayList<String> expected_course_names = new ArrayList<>();
+        ArrayList<String> actual_course_names = new ArrayList<>();
+
+        // Act
+        school = new School("Fontys University of Applied Science",
+                new GregorianCalendar(2018, Calendar.SEPTEMBER, 3));
+
+        school.addCourse(new Course("Math",
+                new GregorianCalendar(2018, Calendar.SEPTEMBER, 4),
+                new GregorianCalendar(2019, Calendar.JANUARY, 10)
+        ));
+
+        expected_course_names.add("TCI");
+        expected_course_names.add("Math");
+
+        actual_course_names = school.getAllCourseNames();
+
+        // Assert
+        Assert.assertArrayEquals(expected_course_names.toArray(), actual_course_names.toArray());
+    }
+
+
 }
