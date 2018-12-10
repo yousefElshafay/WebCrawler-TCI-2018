@@ -160,4 +160,27 @@ public class SchoolTest {
 
         // Assert
     }
+
+    @Test
+    public void courseName() throws CourseDataException, DuplicateCourseException {
+        // Arrange
+        School school = null;
+        Course course = null;
+        ArrayList<Course> courses = null;
+        Course expected_course, actual_course;
+        expected_course = actual_course = new Course("PROCP",
+                new GregorianCalendar(2018, Calendar.SEPTEMBER, 4),
+                new GregorianCalendar(2019, Calendar.JANUARY, 10)
+        );
+
+        // Act
+        school = new School("Fontys University of Applied Science",
+                new GregorianCalendar(2018, Calendar.SEPTEMBER, 3));
+
+        school.addCourse(expected_course);
+        actual_course = school.getCourseBy("Math");
+
+        // Assert
+        Assert.assertEquals("Course not found by the supplied name!", expected_course, actual_course);
+    }
 }
