@@ -34,7 +34,6 @@ public class SchoolTest {
     public void addCourse() throws DuplicateCourseException, CourseDateIsinvalidException {
 
         // throw date exp  course date
-        coursestartdate =  parseDate("1992-09-01");
 
         // create course
          TCI = new Course("TCI",coursestartdate,courseenddate);
