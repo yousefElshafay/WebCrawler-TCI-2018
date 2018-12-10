@@ -65,4 +65,13 @@ public class School {
         }
         return course_names;
     }
+    public Course getCourseBy(String name){
+        for(Course c: this.courses){
+            if(name.equals(c.getName())){
+                return c;
+            }
+        }
+        return null;
+    }
+
 }
