@@ -168,7 +168,7 @@ public class SchoolTest {
         Course course = null;
         ArrayList<Course> courses = null;
         Course expected_course, actual_course;
-        expected_course = actual_course = new Course("PROCP",
+        expected_course = actual_course = new Course("Math",
                 new GregorianCalendar(2018, Calendar.SEPTEMBER, 4),
                 new GregorianCalendar(2019, Calendar.JANUARY, 10)
         );
