@@ -16,6 +16,22 @@ public class School {
 
     }
 
+    public Date getOpeningDate() {
+        return openingDate;
+    }
+
+    public void setCourses(List<Course> courses) {
+        this.courses = courses;
+    }
+
+    public String getSchoolname() {
+        return Schoolname;
+    }
+
+    public List<Course> getCourses() {
+        return courses;
+    }
+
     public boolean AddCourse(Course newcourse) throws DuplicateCourseException
     {
         // check if newcoursename  is already present
