@@ -31,11 +31,12 @@ public class SchoolTest {
     Date newdate = parseDate("1993-09-01");
     School fontys = new School("fontys", newdate);
     @Test
-    public void addCourse() throws DuplicateCourseException {
+    public void addCourse() throws DuplicateCourseException, CourseDateIsinvalidException {
+
+        // throw date exp  course date
+        coursestartdate =  parseDate("1992-09-01");
 
         // create course
-
-
          TCI = new Course("TCI",coursestartdate,courseenddate);
         Assert.assertEquals(true, fontys.AddCourse(TCI));
     }

@@ -45,18 +45,23 @@ public class School {
         return courselist;
     }
 
-    public boolean AddCourse(Course newcourse) throws DuplicateCourseException
+    public boolean AddCourse(Course newcourse) throws DuplicateCourseException,CourseDateIsinvalidException
     {
-        // check if newcoursename  is already present
         for (Course existingcourse: courses)
         {
-                if (existingcourse.getCoursename() == newcourse.getCoursename())
+            // check if newcoursename  is already present
+
+            if (existingcourse.getCoursename() == newcourse.getCoursename())
                 {
                     throw  new DuplicateCourseException();
                 }
         }
 
-
+        // checks for course date
+        if ((openingDate).after(newcourse.getCoursestartDate()))
+        {
+            throw new CourseDateIsinvalidException();
+        }
         if (courses.add(newcourse)){
           return true;
          }
