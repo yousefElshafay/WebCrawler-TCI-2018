@@ -96,5 +96,22 @@ public class SchoolTest {
         Assert.assertTrue(course.getBegin_date().after(school.getOpeningDate()));
     }
 
+    @Test
+    public void uniquCourseName() throws  CourseDataException {
+        //
+        School school = null;
+        Course course = null;
+        ArrayList<Course> courses = null;
 
+        // Act
+        school = new School("Fontys University of Applied Science",
+                new GregorianCalendar(2018, Calendar.SEPTEMBER, 3));
+
+        course = new Course("IPV",
+                new GregorianCalendar(2018, Calendar.SEPTEMBER, 4),
+                new GregorianCalendar(2019, Calendar.JANUARY, 10));
+
+        // Assert
+        courses = school.addCourse(course);
+    }
 }
