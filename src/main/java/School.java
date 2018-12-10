@@ -20,8 +20,16 @@ public class School {
         return openingDate;
     }
 
-    public void setCourses(List<Course> courses) {
-        this.courses = courses;
+    public boolean setCourses(List<Course> courses) {
+       this.courses = courses;
+       if (courses.size()>0)
+       {
+           return true;
+       }
+       else
+       {
+           return false;
+       }
     }
 
     public String getSchoolname() {

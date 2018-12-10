@@ -5,7 +5,9 @@ import sun.util.calendar.LocalGregorianCalendar;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import static org.junit.Assert.*;
 
@@ -39,10 +41,15 @@ public class SchoolTest {
 
     @Test
     public void getOpeningDate() {
+        Assert.assertEquals(parseDate("1993-09-01"),fontys.getOpeningDate());
     }
+
 
     @Test
     public void setCourses() {
+        List<Course> emptlist = new ArrayList<>();
+        // check if assert false works with empty list 
+        Assert.assertFalse(fontys.setCourses(emptlist));
     }
 
     @Test
@@ -59,4 +66,7 @@ public class SchoolTest {
         //Assert.assertNull(fontys.GetCourseByname("TCI"));
         Assert.assertEquals(TCI,fontys.GetCourseByname("TCI"));
     }
+
+
+
 }
