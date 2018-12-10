@@ -36,8 +36,9 @@ public class School {
         return Schoolname;
     }
 
-    public List<Course> getCourses() {
-        return courses;
+    public List<String> getCourses() {
+        List<String> courselist = new ArrayList<>();
+        return courselist;
     }
 
     public boolean AddCourse(Course newcourse) throws DuplicateCourseException

@@ -48,7 +48,7 @@ public class SchoolTest {
     @Test
     public void setCourses() {
         List<Course> emptlist = new ArrayList<>();
-        // check if assert false works with empty list 
+        // check if assert false works with empty list
         Assert.assertFalse(fontys.setCourses(emptlist));
     }
 
@@ -58,6 +58,9 @@ public class SchoolTest {
 
     @Test
     public void getCourses() {
+         List<String> mocklist = new ArrayList<>();
+         mocklist.add("TCI");
+        Assert.assertEquals(mocklist,fontys.getCourses());
     }
 
 
