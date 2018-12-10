@@ -38,6 +38,10 @@ public class School {
 
     public List<String> getCourses() {
         List<String> courselist = new ArrayList<>();
+        for (Course existingcourse: courses)
+        {
+            courselist.add(existingcourse.getCoursename());
+        }
         return courselist;
     }
 

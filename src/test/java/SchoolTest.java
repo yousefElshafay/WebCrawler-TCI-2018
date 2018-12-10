@@ -16,6 +16,9 @@ public class SchoolTest {
 
     Course TCI;
     // parse date to avoid deprecation erro
+    Date coursestartdate = parseDate("2018-09-01");
+    Date courseenddate = parseDate("2018-011-16");
+
 
     public static Date parseDate(String date) {
         try {
@@ -31,8 +34,6 @@ public class SchoolTest {
     public void addCourse() throws DuplicateCourseException {
 
         // create course
-        Date coursestartdate = parseDate("2018-09-01");
-        Date courseenddate = parseDate("2018-011-16");
 
 
          TCI = new Course("TCI",coursestartdate,courseenddate);
@@ -59,7 +60,6 @@ public class SchoolTest {
     @Test
     public void getCourses() {
          List<String> mocklist = new ArrayList<>();
-         mocklist.add("TCI");
         Assert.assertEquals(mocklist,fontys.getCourses());
     }
 
