@@ -5,7 +5,16 @@ public class UserServiceTest {
     private UserService userService;
     @Test
     public void UserServiceMocking{
-        userService=mock(UserService.Class);//arrange
+        //arrange
+        User user=mock(User.class);
+        UserDao userDao=mock(UserDao.class);
+        SecurityService securityService=mock(SecurityService.class);
+        userService=new UserService(userDao,securityService);
+        
+
+
+
+
 
 
     }
