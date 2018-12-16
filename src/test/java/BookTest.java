@@ -3,7 +3,7 @@ import org.junit.Test;
 
 public class BookTest {
 
-    /*setup method will be executed first before test */
+    /*setup method will be executed first before tests */
     @Before
     public void setUp(){
 
