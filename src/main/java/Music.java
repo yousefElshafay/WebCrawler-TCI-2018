@@ -1,16 +1,17 @@
-package Items;
+
+
+
+
+import com.sun.tools.javac.code.Symtab;
 
 import java.time.Year;
 
-public class Music extends Items {
+public class Music extends Media {
 
-    private String genre, format, year, artist;
+    private String artist;
 
-    public Music(String name, String format, int year, String genre, String format1, String year1, String artist) {
-        super(name, format, year);
-        this.genre = genre;
-        this.format = format1;
-        this.year = year1;
+    public Music(String genre, String format, int year, String artist) {
+        super(genre, format, year);
         this.artist = artist;
     }
 }

@@ -1,18 +1,44 @@
-package Items;
+
+
+import com.sun.tools.javac.jvm.Items;
 
 import java.time.Year;
+import java.util.List;
 
-public class Movies extends Items{
+public class Movies extends Media {
 
-    private String Genre, Format, Year, Director, Writers, Stars;
+ String dirctor;
+ List<Integer> stars;
+ List<String> wirters;
 
-    public Movies(String name, String format, int year, String genre, String format1, String year1, String director, String writers, String stars) {
+    public Movies(String name, String format, int year, String dirctor, List<Integer> stars, List<String> wirters) {
         super(name, format, year);
-        Genre = genre;
-        Format = format1;
-        Year = year1;
-        Director = director;
-        Writers = writers;
-        Stars = stars;
+        this.dirctor = dirctor;
+        this.stars = stars;
+        this.wirters = wirters;
+    }
+
+    public String getDirctor() {
+        return dirctor;
+    }
+
+    public void setDirctor(String dirctor) {
+        this.dirctor = dirctor;
+    }
+
+    public List<Integer> getStars() {
+        return stars;
+    }
+
+    public void setStars(List<Integer> stars) {
+        this.stars = stars;
+    }
+
+    public List<String> getWirters() {
+        return wirters;
+    }
+
+    public void setWirters(List<String> wirters) {
+        this.wirters = wirters;
     }
 }
