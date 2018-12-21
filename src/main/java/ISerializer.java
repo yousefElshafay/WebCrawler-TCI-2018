@@ -1,2 +1,8 @@
+import java.util.List;
+
 public interface ISerializer {
+
+     String ListOfMediaToJson(List<String> mediaItem);
+     String MediaToJson( String media);
+
 }
