@@ -1,6 +1,10 @@
 import java.util.List;
 
 public class Crawler implements ICrawler {
+
+
+    List<MediaData> mediaDataList;
+
     @Override
     public List<String> GetAllContents() {
         return null;
