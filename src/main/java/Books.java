@@ -23,10 +23,6 @@ public class Books extends Media {
         return author;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
     public String getPublisher() {
         return publisher;
     }

@@ -14,4 +14,6 @@ public class Music extends Media {
         super(genre, format, year);
         this.artist = artist;
     }
+
+
 }

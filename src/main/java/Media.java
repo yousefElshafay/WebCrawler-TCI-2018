@@ -13,24 +13,11 @@ public abstract class Media {
     public String getGenre() {
         return genre;
     }
-
-    public void setGenre(String genre) {
-        this.genre = genre;
-    }
-
     public String getFormat() {
         return format;
     }
-
-    public void setFormat(String format) {
-        this.format = format;
-    }
-
     public int getYear() {
         return year;
     }
 
-    public void setYear(int year) {
-        this.year = year;
-    }
 }
