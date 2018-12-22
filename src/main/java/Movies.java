@@ -41,4 +41,6 @@ public class Movies extends Media {
     public void setWirters(List<String> wirters) {
         this.wirters = wirters;
     }
+
+
 }

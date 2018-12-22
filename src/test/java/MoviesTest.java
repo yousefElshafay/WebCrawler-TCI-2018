@@ -7,27 +7,34 @@ import java.util.List;
 
 public class MoviesTest {
 
-
+    Movies testMovie ;
     /*setup method will be executed first before test */
     @Before
     public void setUp(){
+
+        List<Integer> stars = new ArrayList<>();
+        stars.add(2);
+        List<String> writers = new ArrayList<>();
+        writers.add("joe ");
+        testMovie =  new Movies("testmovie","testformat", 2018,"steven Spielberg",stars,writers);
 
     }
 
     // check the director of the movie
     @Test
     public void MovieObjectIsNotNull(){
-        List<Integer> stars = new ArrayList<>();
-        stars.add(2);
-        List<String> writers = new ArrayList<>();
-        writers.add("joe ");
-
-        Movies testMovie = new Movies("testmovie","testformat", 2018,"steven Spielberg",stars,writers);
 
         // validating object exist
         Assert.assertNotNull(testMovie);
-
 }
+
+    // movie should has a director
+
+    @Test
+    public void MovieHasDirector() {
+        Assert.assertEquals("steven Spielberg", testMovie.getDirctor());
+    }
+
 // check the year of the movie
     @Test
     public void shouldHaveYear (){
