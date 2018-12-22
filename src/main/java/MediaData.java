@@ -1,9 +1,10 @@
 public class MediaData {
 
+    // add properites
     private int iD;
     private long time;
     private  int pages;
-//
+
 
     private int searchDepth;
 
@@ -17,20 +18,14 @@ public class MediaData {
 
 
 
+    // return media unique id
     public int getiD() {
         return iD;
     }
 
-    public void setiD(int iD) {
-        this.iD = iD;
-    }
-
+    //return the time of the media content
     public long getTime() {
         return time;
-    }
-
-    public void setTime(long time) {
-        this.time = time;
     }
 
     public int getPages() {
