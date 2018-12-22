@@ -6,7 +6,7 @@ import com.sun.tools.javac.jvm.Items;
 public class Books extends Media {
 
 
-    private String author;
+    private String  author;
     private String publisher;
     private String isbn;
 
@@ -18,6 +18,7 @@ public class Books extends Media {
         this.isbn = isbn;
     }
 
+    // get author string
     public String getAuthor() {
         return author;
     }
