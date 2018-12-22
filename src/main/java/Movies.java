@@ -22,10 +22,6 @@ public class Movies extends Media {
         return dirctor;
     }
 
-    public void setDirctor(String dirctor) {
-        this.dirctor = dirctor;
-    }
-
     public List<Integer> getStars() {
         return stars;
     }
@@ -36,10 +32,6 @@ public class Movies extends Media {
 
     public List<String> getWirters() {
         return wirters;
-    }
-
-    public void setWirters(List<String> wirters) {
-        this.wirters = wirters;
     }
 
 
