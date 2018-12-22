@@ -4,14 +4,14 @@
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545503706799" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545503713191" />
   </component>
   <component name="RunManager">
-    <configuration name="MoviesTest.shouldHaveDirector" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MoviesTest.MovieObjectIsNotNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Crawler_test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MoviesTest" />
-      <option name="METHOD_NAME" value="shouldHaveDirector" />
+      <option name="METHOD_NAME" value="MovieObjectIsNotNull" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -19,7 +19,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MoviesTest.shouldHaveDirector" />
+        <item itemvalue="JUnit.MoviesTest.MovieObjectIsNotNull" />
       </list>
     </recent_temporary>
   </component>

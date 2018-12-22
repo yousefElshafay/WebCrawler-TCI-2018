@@ -16,7 +16,7 @@ public class MoviesTest {
 
     // check the director of the movie
     @Test
-    public void shouldHaveDirector (){
+    public void MovieObjectIsNotNull(){
         List<Integer> stars = new ArrayList<>();
         stars.add(2);
         List<String> writers = new ArrayList<>();
