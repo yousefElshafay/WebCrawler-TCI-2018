@@ -2,6 +2,9 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MoviesTest {
 
 
@@ -14,7 +17,12 @@ public class MoviesTest {
     // check the director of the movie
     @Test
     public void shouldHaveDirector (){
-        Movies testMovie = new Movies("testmovie","testformat", 2018,"steven Spielberg",null,null);
+        List<Integer> stars = new ArrayList<>();
+        stars.add(2);
+        List<String> writers = new ArrayList<>();
+        writers.add("joe ");
+
+        Movies testMovie = new Movies("testmovie","testformat", 2018,"steven Spielberg",stars,writers);
 
         // validating object exist
         Assert.assertNotNull(testMovie);
