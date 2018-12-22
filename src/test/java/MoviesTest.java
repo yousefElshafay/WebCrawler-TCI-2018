@@ -38,10 +38,17 @@ public class MoviesTest {
 // check the year of the movie
     @Test
     public void shouldHaveYear (){
-// check the writer of the movie
+        Assert.assertEquals(2018, testMovie.getYear());
+
     }
+    // check the writer of the movie
+
     @Test
     public void shouldHaveWriter (){
+
+        List<String> ListOfWriterForTest = new ArrayList<>();
+        ListOfWriterForTest.add("joe ");
+        Assert.assertEquals(ListOfWriterForTest, testMovie.getWirters());
 
     }
 
