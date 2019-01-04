@@ -2,8 +2,8 @@ import org.junit.Before;
 import org.junit.Test;
 import static org.mockito.Mockito.*;
 
-
 import org.junit.runners.Parameterized;
+import javax.ws.rs.InternalServerErrorException;
 
 import java.io.IOException;
 
@@ -52,9 +52,23 @@ public class CrawlerTest {
     }
 
 
+    /* this method is to test whether a exception is thrown or not when the results are null*/
+    @Test(expected =InternalServerErrorException.class )
+    public void CrawlerServiceThrowsExceptionWhenResultIsNull() throws IOException{
+
+    }
+
+
+    /* this method is to test whether a exception is thrown or not when the results are empty are null*/
+    @Test(expected =InternalServerErrorException.class )
+    public void CrawlerServiceThrowsExceptionWhenResultsAreEmptyString() throws IOException{
+
+    }
     /*
       Tests for GetSpecific Item
      */
+
+
     /*this is to test that getStatics is called only once*/
     @Test
 
