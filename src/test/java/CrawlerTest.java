@@ -15,6 +15,13 @@ public class CrawlerTest {
 
 
     }
+    /*this method should throws and exception when id is wrong*/
+
+    @Test(expected = ArrayIndexOutOfBoundsException.class)
+    public void throwsExceptionWhenIDIsInvalid() throws IOException {
+
+    }
+
     /*this method is to test connection*/
     @Test
     public void ConnectionTest()throws IOException{
@@ -26,6 +33,9 @@ public class CrawlerTest {
 
     }
 
+    /*
+   Get all items tests
+     */
 
     /*crawlerMethodForAllIsCalledOnlyOnce*/
     @Test
@@ -69,10 +79,10 @@ public class CrawlerTest {
      */
 
 
-    /*this is to test that getStatics is called only once*/
+    /*this is to test that getStaticsInformation is called only once*/
     @Test
 
-    public void CalledOnlyOnce() throws IOException{
+    public void getMediaDataCalledOnlyOnce() throws IOException{
 
         //arrange
 
@@ -81,6 +91,50 @@ public class CrawlerTest {
         //assert
 
     }
+
+    /* this method is to test whether a exception is thrown or not when the results  are null*/
+    @Test(expected =InternalServerErrorException.class )
+    public void CrawlerServiceGetSpecificThrowsExceptionWhenResultsAreNull() throws IOException{
+
+    }
+    /* this method is to test whether a exception is thrown or not when the results are empty strings*/
+    @Test(expected =InternalServerErrorException.class )
+    public void CrawlerServiceGetSpecificThrowsExceptionWhenResultsAreEmptyString() throws IOException{
+
+    }
+
+    /* this method will test the final proper results of this method*/
+    @Test
+    public void GetSpecificItemsShouldReturnProperResults() throws IOException{
+
+    }
+
+      /*
+   Get all information about mediaDataSearch Tests
+     */
+
+    @Test
+    public void CrawlerFunctionForSingleItemIsCalledOnce() throws IOException{
+
+    }
+
+    @Test
+    public void SerializerIsCalledOnce() throws IOException{
+
+    }
+    /* this method is to test whether a exception is thrown or not when the results  are null*/
+    @Test(expected =InternalServerErrorException.class )
+    public void CrawlerServiceGetItemsDataThrowsExceptionWhenResultsAreNull() throws IOException{
+
+    }
+
+    /* this method will test the final proper results of getItemsData*/
+    @Test
+    public void GetItemsDataShouldReturnProperResults() throws IOException{
+
+    }
+
+
 
 
 }

@@ -11,9 +11,12 @@ public class Crawler implements ICrawler {
     }
 
     @Override
-    public String SpecifytTheItemsSearched(String Item) {
+    public String getSepcificItems(String Item) {
         return null;
     }
+
+
+
 
     @Override
     public MediaData GetItemData() {
