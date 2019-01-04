@@ -1,5 +1,6 @@
 import org.junit.Before;
 import org.junit.Test;
+import static org.mockito.Mockito.*;
 
 
 import org.junit.runners.Parameterized;
@@ -14,6 +15,17 @@ public class CrawlerTest {
 
 
     }
+    /*this method is to test connection*/
+    @Test
+    public void ConnectionTest()throws IOException{
+
+    }
+    /*Check if the URL is the same*/
+    @Test
+    public void URL()throws IOException{
+
+    }
+
 
     /*crawlerMethodForAllIsCalledOnlyOnce*/
     @Test
