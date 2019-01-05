@@ -15,6 +15,7 @@ public class CrawlerTest {
     public  void setUp(){
 
 
+
     }
     /*this method should throws and exception when id is wrong*/
 
@@ -22,6 +23,7 @@ public class CrawlerTest {
     public void throwsExceptionWhenIDIsInvalid() throws IOException {
 
     }
+
 
     /*this method is to test connection*/
     @Test
@@ -33,7 +35,20 @@ public class CrawlerTest {
     public void URL()throws IOException{
 
     }
+    @Test(expected = NullPointerException.class)
+    public void getAllUsesPagesCrawlerGetCatLinks() throws IOException {
 
+    }
+
+    @Test
+    public void getSpecificItemCallsPagesCrawler() throws IOException {
+
+    }
+    @Test
+    @Parameters(method = "getSpecific")
+    public void getSpecificItemWithParams(String url , String name, String response) throws IOException {
+
+    }
     /*
    Get all items tests
      */
