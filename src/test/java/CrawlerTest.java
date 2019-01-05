@@ -1,3 +1,4 @@
+import junitparams.Parameters;
 import org.junit.Before;
 import org.junit.Test;
 import static org.mockito.Mockito.*;
@@ -74,6 +75,21 @@ public class CrawlerTest {
     public void CrawlerServiceThrowsExceptionWhenResultsAreEmptyString() throws IOException{
 
     }
+    /* this method will test the final proper results of this method*/
+    @Test
+    public void GetAllItemsShouldReturnProperResults() throws IOException{
+
+    }
+
+    /*in this method parameters will be passed to the test method*/
+    @Test
+    @Parameters(method="getAllItems")
+    public void GetAllItemsShouldReturnProperResultsWithParameters(String expectedResult) throws IOException{
+
+    }
+
+
+
     /*
       Tests for GetSpecific Item
      */
@@ -106,6 +122,12 @@ public class CrawlerTest {
     /* this method will test the final proper results of this method*/
     @Test
     public void GetSpecificItemsShouldReturnProperResults() throws IOException{
+
+    }
+
+    @Test
+    @Parameters(method="getSpecificItems")
+    public void GetAllItemsShouldReturnProperResultsWithParameters(String input,String outPut) throws IOException{
 
     }
 
