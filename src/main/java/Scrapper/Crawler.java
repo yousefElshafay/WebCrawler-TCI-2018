@@ -1,3 +1,8 @@
+package Scrapper;
+
+import Handler.MediaData;
+import Interface.ICrawler;
+
 import java.io.IOException;
 import java.util.List;
 

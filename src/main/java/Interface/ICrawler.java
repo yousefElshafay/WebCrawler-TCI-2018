@@ -1,3 +1,7 @@
+package Interface;
+
+import Handler.MediaData;
+
 import java.util.List;
 
 public interface ICrawler {

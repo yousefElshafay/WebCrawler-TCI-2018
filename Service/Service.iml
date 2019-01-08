@@ -22,7 +22,10 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="JAX-WS-Glassfish / JAX-WS 2.2 RI / Metro 1.X / JWSDP 2.2" level="project" />
+    <orderEntry type="library" exported="" name="JAX-WS-Glassfish / JAX-WS 2.2 RI / Metro 1.X / JWSDP 2.2" level="project" />
     <orderEntry type="library" name="lib" level="project" />
+    <orderEntry type="library" exported="" name="javax.ws.rs-api-2.0" level="project" />
+    <orderEntry type="module" module-name="Crawler_main" exported="" />
+    <orderEntry type="module" module-name="Crawler" exported="" />
   </component>
 </module>

@@ -1,3 +1,5 @@
+package Scrapper;
+
 import java.io.IOException;
 
 public class PageScrapper {

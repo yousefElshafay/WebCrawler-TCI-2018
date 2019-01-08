@@ -1,3 +1,8 @@
+package Handler;
+
+import Handler.MediaData;
+import Interface.ISerializer;
+
 import java.util.List;
 
 public class Serializer implements ISerializer {

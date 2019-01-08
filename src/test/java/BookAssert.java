@@ -1,8 +1,9 @@
+import MediaLibrary.Books;
 import org.fest.assertions.api.AbstractAssert;
 import org.junit.Test;
 
 
-public class BookAssert extends AbstractAssert<BookAssert,Books> {
+public class BookAssert extends AbstractAssert<BookAssert, Books> {
 
     public BookAssert(Books actual) {
         super(actual,BookAssert.class);

@@ -1,13 +1,15 @@
+package Scrapper;
+
 import java.io.IOException;
 import java.util.List;
 
 public class PagesScrapper {
 
-    List<String> getLinksOfCategory(String baseURL) throws IOException {
+    public List<String> getLinksOfCategory(String baseURL) throws IOException {
 
         return  null;
     }
-    List<String> getItemsURL(String baseURL){
+    public List<String> getItemsURL(String baseURL){
 
         return  null;
     }
