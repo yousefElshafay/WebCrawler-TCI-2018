@@ -4,5 +4,5 @@ public interface ICrawler {
 
 public List<String> GetAllContents();
 public  String getSepcificItems(String Item);
-public MediaData GetItemData();
+public MediaData GetItemData(int id);
 }
