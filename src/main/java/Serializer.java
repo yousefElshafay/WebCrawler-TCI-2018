@@ -11,4 +11,9 @@ public class Serializer implements ISerializer {
     public String MediaToJson(String media) {
         return null;
     }
+
+    @Override
+    public String MediaDataToJSON(MediaData dataItem) {
+        return null;
+    }
 }
