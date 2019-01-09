@@ -3,8 +3,10 @@ import Interface.ISerializer;
 import Scrapper.Crawler;
 import Scrapper.PageScrapper;
 import Scrapper.PagesScrapper;
+import javafx.beans.binding.When;
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import  ScrappingService.Service;
@@ -212,19 +214,27 @@ public class CrawlerTest {
     @Test(expected =InternalServerErrorException.class )
     public void CrawlerServiceGetSpecificThrowsExceptionWhenResultsAreNull() throws IOException{
 
-        when(iSerializer.ListOfMediaToJson(iCrawler.GetAllContents())).thenReturn(null);
+        when(iSerializer.MediaToJson(iCrawler.getSepcificItems("Book"))).thenReturn(null);
         service.getAll();
 
     }
 //    /* this method is to test whether a exception is thrown or not when the results are empty strings*/
-//    @Test(expected =InternalServerErrorException.class )
+    @Test(expected =InternalServerErrorException.class )
     public void CrawlerServiceGetSpecificThrowsExceptionWhenResultsAreEmptyString() throws IOException{
+
 
     }
 
     /* this method will test the final proper results of this method*/
     @Test
     public void GetSpecificItemsShouldReturnProperResults() throws IOException{
+        when(iSerializer.MediaToJson(crawler.getSepcificItems("Book"))).thenReturn("{name=Book}");
+        Response resonse;
+
+        //act
+        resonse=service.getItem("Book");
+        Assert.assertEquals("The expected result is:" + "{name=Book}" + " was: " + resonse.toString(), "{name=Book}" , resonse.getEntity() );
+
 
     }
 
@@ -241,6 +251,7 @@ public class CrawlerTest {
     @Test
     public void CrawlerFunctionForSingleItemIsCalledOnce() throws IOException{
 
+        
     }
 
     @Test
