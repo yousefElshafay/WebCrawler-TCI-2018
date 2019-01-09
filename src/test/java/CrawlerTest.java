@@ -63,7 +63,7 @@ public class CrawlerTest {
     @Test(expected = ArrayIndexOutOfBoundsException.class)
     public void throwsExceptionWhenIDIsInvalid() throws IOException {
 
-        crawler.GetItemData(0);
+        crawler.GetItemData(-33);
 
     }
 
@@ -210,7 +210,7 @@ public class CrawlerTest {
 
         when(iSerializer.MediaToJson(crawler.getSepcificItems("Movies"))).thenReturn("{name = Movies}");
         //act
-        service.getItem("{ name = Movies }");
+        service.getItem("Movies");
         //assert
         verify(iCrawler,times(1)).getSepcificItems("Movies");
 
@@ -283,7 +283,7 @@ public class CrawlerTest {
         //act
         response = service.getDataItemService(1);
         //assert
-        Assert.assertEquals("The expected result is:" + "{ time=123 }" + " was: " + response.toString(), "{ time=123 }", response.getEntity() );
+        Assert.assertEquals("The expected result is:" + "" + " was: " + response.toString(), "{ time=123 }", response.getEntity() );
 
 
     }

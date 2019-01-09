@@ -26,21 +26,49 @@ public class Service {
     @Produces({MediaType.APPLICATION_JSON})
     public Response getAll() throws IOException {
 
-        return null;
+        String allmedia = serializer.ListOfMediaToJson(crawler.GetAllContents());
+
+        if ( allmedia == null|| allmedia.equals("")) {
+            throw new InternalServerErrorException();
+        } else {
+            return Response.ok(allmedia).build();
+        }
 
 
     }
     @GET
-    @Path("item")
+    @Path("specific")
     @Produces({MediaType.APPLICATION_JSON})
     public Response getItem(@QueryParam("keyword") String keyword) throws IOException {
-       return null;
+        if ( keyword == null|| keyword.equals("")) {
+            throw new InternalServerErrorException();
+        }
+
+        String specificMedia = serializer.MediaToJson(crawler.getSepcificItems(keyword));
+
+        if ( specificMedia == null|| specificMedia.equals("")) {
+            throw new InternalServerErrorException();
+        } else {
+            return Response.ok(specificMedia).build();
+        }
         }
     @GET
-    @Path("stats")
+    @Path("mediainfo")
     @Produces({MediaType.APPLICATION_JSON})
     public Response getDataItemService(@QueryParam("id") int id){
-        return null;
+        if ( id <= 0  ) {
+            throw new IllegalArgumentException();
+        }
+
+        String mediaData = serializer.MediaDataToJSON(crawler.GetItemData(id));
+
+        if ( mediaData == null|| mediaData.equals("")) {
+            throw new InternalServerErrorException();
+        } else {
+            return Response.ok(mediaData).build();
+        }
+
+
     }
 
 
