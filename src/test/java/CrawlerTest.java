@@ -1,15 +1,16 @@
+import Interface.ICrawler;
+import Interface.ISerializer;
 import Scrapper.Crawler;
 import Scrapper.PageScrapper;
 import Scrapper.PagesScrapper;
 import org.junit.Before;
 import org.junit.Test;
-
+import  ScrappingService.Service;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.*;
 /*import javax.ws.rs.InternalServerErrorException;*/
 import org.mockito.Mock;
-
 
 import java.io.IOException;
 import java.util.List;
@@ -19,8 +20,12 @@ public class CrawlerTest {
 
     private static final List<String> NullValue=null;
     private Crawler crawler;
-    @Mock  private PageScrapper pageScrapper;
-    @Mock private PagesScrapper pagesScrapper;
+    private PageScrapper pageScrapper;
+    private PagesScrapper pagesScrapper;
+    private ICrawler iCrawler;
+    private ISerializer iSerializer;
+    private Service service;
+
     /*this method will be executed first before test*/
     @Before
     public  void setUp(){
@@ -29,6 +34,9 @@ public class CrawlerTest {
         crawler = new Crawler("http://localhost:8888");
         crawler.setPageScrapper(pageScrapper);
         crawler.setPagesScrapper(pagesScrapper);
+        iCrawler=mock(ICrawler.class);
+        iSerializer=mock(ISerializer.class);
+        service=mock(Service.class);
 
     }
     /*this method should throws  exception when id is wrong*/
