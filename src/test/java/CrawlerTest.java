@@ -1,28 +1,42 @@
-import junitparams.Parameters;
+import Scrapper.Crawler;
+import Scrapper.PageScrapper;
+import Scrapper.PagesScrapper;
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.*;
 /*import javax.ws.rs.InternalServerErrorException;*/
-import org.junit.runners.Parameterized;
+import org.mockito.Mock;
 
 
 import java.io.IOException;
+import java.util.List;
 
 public class CrawlerTest {
 
-    PageScrapper pageScrapper;
+
+    private static final List<String> NullValue=null;
+    private Crawler crawler;
+    @Mock  private PageScrapper pageScrapper;
+    @Mock private PagesScrapper pagesScrapper;
     /*this method will be executed first before test*/
     @Before
     public  void setUp(){
-       pageScrapper  = mock(PageScrapper.class);
-
-
+        pageScrapper = mock(PageScrapper.class);
+        pagesScrapper = mock(PagesScrapper.class);
+        crawler = new Crawler("http://localhost:8888");
+        crawler.setPageScrapper(pageScrapper);
+        crawler.setPagesScrapper(pagesScrapper);
 
     }
-    /*this method should throws and exception when id is wrong*/
+    /*this method should throws  exception when id is wrong*/
 
     @Test(expected = ArrayIndexOutOfBoundsException.class)
     public void throwsExceptionWhenIDIsInvalid() throws IOException {
+
+        crawler.GetItemData(0);
 
     }
 
@@ -30,27 +44,40 @@ public class CrawlerTest {
     /*this method is to test connection*/
     @Test
     public void ConnectionTest()throws IOException{
-
+        assertTrue(crawler.Connection());
     }
     /*Check if the URL is the same*/
     @Test
     public void URL()throws IOException{
+        assertEquals(crawler.BaseURL,"http://localhost:8888");
+
 
     }
+
     @Test(expected = NullPointerException.class)
-    public void getAllUsesPagesCrawlerGetCatLinks() throws IOException {
+    public void getAllUsesPagesCrawlerGetCategoryLinks() throws IOException {
+
+        when(pagesScrapper.getLinksOfCategory("http://localhost:8888")).thenReturn(NullValue);
+
+        crawler.GetAllContents();
+        verify(pagesScrapper).getLinksOfCategory("http://localhost:8888");
 
     }
 
     @Test
     public void getSpecificItemCallsPagesCrawler() throws IOException {
 
-    }
-    @Test
-    @Parameters(method = "getSpecific")
-    public void getSpecificItemWithParams(String url , String name, String response) throws IOException {
+        when(pagesScrapper.getSpecificItems("http://localhost:8888","Name")).thenReturn("{name=Name}");
+
+        crawler.getSepcificItems("Name");
+        verify(pagesScrapper).getSpecificItems("http://localhost:8888","Name");
 
     }
+//    @Test
+//    @Parameters(method = "getSpecific")
+//    public void getSpecificItemWithParams(String url , String name, String response) throws IOException {
+//
+//    }
     /*
    Get all items tests
      */
@@ -99,11 +126,11 @@ public class CrawlerTest {
     }
 
     /*in this method parameters will be passed to the test method*/
-    @Test
-    @Parameters(method="getAllItems")
-    public void GetAllItemsShouldReturnProperResultsWithParameters(String expectedResult) throws IOException{
-
-    }
+//    @Test
+//    @Parameters(method="getAllItems")
+//    public void GetAllItemsShouldReturnProperResultsWithParameters(String expectedResult) throws IOException{
+//
+//    }
 
 
 
@@ -142,11 +169,11 @@ public class CrawlerTest {
 
     }
 
-    @Test
-    @Parameters(method="getSpecificItems")
-    public void GetAllItemsShouldReturnProperResultsWithParameters(String input,String outPut) throws IOException{
-
-    }
+//    @Test
+//    @Parameters(method="getSpecificItems")
+//    public void GetAllItemsShouldReturnProperResultsWithParameters(String input,String outPut) throws IOException{
+//
+//    }
 
       /*
    Get all information about mediaDataSearch Tests

@@ -1,9 +1,6 @@
+package MediaLibrary;
 
-
-
-
-
-
+import MediaLibrary.Media;
 
 public class Music extends Media {
 

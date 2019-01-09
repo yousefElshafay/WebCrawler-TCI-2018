@@ -1,3 +1,5 @@
+package MediaLibrary;
+
 public abstract class Media {
     private String genre;
     private String format;
