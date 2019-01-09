@@ -36,6 +36,12 @@ public class Service {
     public Response getItem(@QueryParam("keyword") String keyword) throws IOException {
        return null;
         }
+    @GET
+    @Path("stats")
+    @Produces({MediaType.APPLICATION_JSON})
+    public Response getDataItemService(@QueryParam("id") int id){
+        return null;
+    }
 
 
 
