@@ -5,9 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b4d4932-1cb2-48dc-a985-4eed22ff4bdd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/src/ScrappingService/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/Service/src/ScrappingService/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Algorithm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Books.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Crawler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/IAlgorithm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ICrawler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ISerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Media.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/MediaData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Movies.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Music.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/PageScrapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/PagesScrapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Serializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/BookAssert.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/BookAssert.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/CrawlerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/CrawlerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/MusicAssert.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/MusicAssert.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CrawlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CrawlerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -129,12 +144,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="191" />
+          <entry key="java" value="648" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="191" />
+          <entry key="JAVA" value="648" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -144,8 +169,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Service/src/ScrappingService/Service.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="35" column="65" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="65" />
+            <state relative-caret-position="263">
+              <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -168,20 +193,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/CrawlerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Scrapper/Crawler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="299">
+              <caret line="196" lean-forward="true" selection-start-line="196" selection-end-line="196" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -742,7 +755,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547033937953" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547040197120" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15527344" />
@@ -760,69 +773,71 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CrawlerTest.ConnectionTest">
-    <configuration name="CrawlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CrawlerTest.getMediaDataCalledOnlyOnce">
+    <configuration name="CrawlerTest.GetAllItemsShouldReturnProperResults" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Crawler_test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CrawlerTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CrawlerTest.ConnectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Crawler_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CrawlerTest" />
-      <option name="METHOD_NAME" value="ConnectionTest" />
+      <option name="METHOD_NAME" value="GetAllItemsShouldReturnProperResults" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CrawlerTest.getAllUsesPagesCrawlerGetCategoryLinks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CrawlerTest.GetAllItemsShouldReturnProperResultsWithParameters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Crawler_test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CrawlerTest" />
-      <option name="METHOD_NAME" value="getAllUsesPagesCrawlerGetCategoryLinks" />
+      <option name="METHOD_NAME" value="GetAllItemsShouldReturnProperResultsWithParameters" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CrawlerTest.getSpecificItemCallsPagesCrawler" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CrawlerTest.SerlizerListToJsonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Crawler_test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CrawlerTest" />
-      <option name="METHOD_NAME" value="getSpecificItemCallsPagesCrawler" />
+      <option name="METHOD_NAME" value="SerlizerListToJsonTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CrawlerTest.throwsExceptionWhenIDIsInvalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CrawlerTest.getAllItemsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Crawler_test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CrawlerTest" />
-      <option name="METHOD_NAME" value="throwsExceptionWhenIDIsInvalid" />
+      <option name="METHOD_NAME" value="getAllItemsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CrawlerTest.getMediaDataCalledOnlyOnce" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Crawler_test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CrawlerTest" />
+      <option name="METHOD_NAME" value="getMediaDataCalledOnlyOnce" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CrawlerTest" />
-      <item itemvalue="JUnit.CrawlerTest.getAllUsesPagesCrawlerGetCategoryLinks" />
-      <item itemvalue="JUnit.CrawlerTest.getSpecificItemCallsPagesCrawler" />
-      <item itemvalue="JUnit.CrawlerTest.throwsExceptionWhenIDIsInvalid" />
-      <item itemvalue="JUnit.CrawlerTest.ConnectionTest" />
+      <item itemvalue="JUnit.CrawlerTest.getAllItemsTest" />
+      <item itemvalue="JUnit.CrawlerTest.SerlizerListToJsonTest" />
+      <item itemvalue="JUnit.CrawlerTest.GetAllItemsShouldReturnProperResults" />
+      <item itemvalue="JUnit.CrawlerTest.GetAllItemsShouldReturnProperResultsWithParameters" />
+      <item itemvalue="JUnit.CrawlerTest.getMediaDataCalledOnlyOnce" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CrawlerTest.ConnectionTest" />
-        <item itemvalue="JUnit.CrawlerTest.getSpecificItemCallsPagesCrawler" />
-        <item itemvalue="JUnit.CrawlerTest" />
-        <item itemvalue="JUnit.CrawlerTest.throwsExceptionWhenIDIsInvalid" />
-        <item itemvalue="JUnit.CrawlerTest.getAllUsesPagesCrawlerGetCategoryLinks" />
+        <item itemvalue="JUnit.CrawlerTest.getMediaDataCalledOnlyOnce" />
+        <item itemvalue="JUnit.CrawlerTest.getAllItemsTest" />
+        <item itemvalue="JUnit.CrawlerTest.GetAllItemsShouldReturnProperResultsWithParameters" />
+        <item itemvalue="JUnit.CrawlerTest.GetAllItemsShouldReturnProperResults" />
+        <item itemvalue="JUnit.CrawlerTest.SerlizerListToJsonTest" />
       </list>
     </recent_temporary>
   </component>
@@ -839,50 +854,50 @@
       <workItem from="1546785438380" duration="3057000" />
       <workItem from="1546954558368" duration="6181000" />
       <workItem from="1546960913035" duration="769000" />
-      <workItem from="1547033486407" duration="436000" />
+      <workItem from="1547033486407" duration="6219000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CrawlerTest_getAllUsesPagesCrawlerGetCategoryLinks - 2019.01.08 at 15h 34m 00s.xml">
-      <configuration name="CrawlerTest.getAllUsesPagesCrawlerGetCategoryLinks" configurationId="JUnit" />
+    <history-entry file="CrawlerTest_getAllItemsTest - 2019.01.09 at 04h 08m 20s.xml">
+      <configuration name="CrawlerTest.getAllItemsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CrawlerTest_getAllUsesPagesCrawlerGetCategoryLinks - 2019.01.08 at 15h 38m 49s.xml">
-      <configuration name="CrawlerTest.getAllUsesPagesCrawlerGetCategoryLinks" configurationId="JUnit" />
+    <history-entry file="CrawlerTest_getAllItemsTest - 2019.01.09 at 04h 10m 59s.xml">
+      <configuration name="CrawlerTest.getAllItemsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CrawlerTest_getSpecificItemCallsPagesCrawler - 2019.01.08 at 15h 42m 02s.xml">
-      <configuration name="CrawlerTest.getSpecificItemCallsPagesCrawler" configurationId="JUnit" />
+    <history-entry file="CrawlerTest_SerlizerListToJsonTest - 2019.01.09 at 04h 18m 21s.xml">
+      <configuration name="CrawlerTest.SerlizerListToJsonTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CrawlerTest_getSpecificItemCallsPagesCrawler - 2019.01.08 at 15h 43m 28s.xml">
-      <configuration name="CrawlerTest.getSpecificItemCallsPagesCrawler" configurationId="JUnit" />
+    <history-entry file="CrawlerTest_SerlizerListToJsonTest - 2019.01.09 at 04h 19m 13s.xml">
+      <configuration name="CrawlerTest.SerlizerListToJsonTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CrawlerTest_getSpecificItemCallsPagesCrawler - 2019.01.08 at 15h 44m 06s.xml">
-      <configuration name="CrawlerTest.getSpecificItemCallsPagesCrawler" configurationId="JUnit" />
+    <history-entry file="CrawlerTest_GetAllItemsShouldReturnProperResults - 2019.01.09 at 05h 10m 39s.xml">
+      <configuration name="CrawlerTest.GetAllItemsShouldReturnProperResults" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CrawlerTest_throwsExceptionWhenIDIsInvalid - 2019.01.08 at 15h 44m 21s.xml">
-      <configuration name="CrawlerTest.throwsExceptionWhenIDIsInvalid" configurationId="JUnit" />
+    <history-entry file="CrawlerTest_GetAllItemsShouldReturnProperResultsWithParameters - 2019.01.09 at 05h 11m 32s.xml">
+      <configuration name="CrawlerTest.GetAllItemsShouldReturnProperResultsWithParameters" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CrawlerTest - 2019.01.08 at 15h 44m 30s.xml">
-      <configuration name="CrawlerTest" configurationId="JUnit" />
+    <history-entry file="CrawlerTest_getMediaDataCalledOnlyOnce - 2019.01.09 at 05h 15m 43s.xml">
+      <configuration name="CrawlerTest.getMediaDataCalledOnlyOnce" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CrawlerTest_getSpecificItemCallsPagesCrawler - 2019.01.08 at 15h 44m 58s.xml">
-      <configuration name="CrawlerTest.getSpecificItemCallsPagesCrawler" configurationId="JUnit" />
+    <history-entry file="CrawlerTest_getMediaDataCalledOnlyOnce - 2019.01.09 at 05h 16m 26s.xml">
+      <configuration name="CrawlerTest.getMediaDataCalledOnlyOnce" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CrawlerTest_getSpecificItemCallsPagesCrawler - 2019.01.08 at 15h 46m 19s.xml">
-      <configuration name="CrawlerTest.getSpecificItemCallsPagesCrawler" configurationId="JUnit" />
+    <history-entry file="CrawlerTest_getAllItemsTest - 2019.01.09 at 05h 17m 11s.xml">
+      <configuration name="CrawlerTest.getAllItemsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CrawlerTest_ConnectionTest - 2019.01.08 at 15h 49m 37s.xml">
-      <configuration name="CrawlerTest.ConnectionTest" configurationId="JUnit" />
+    <history-entry file="CrawlerTest_getMediaDataCalledOnlyOnce - 2019.01.09 at 05h 17m 30s.xml">
+      <configuration name="CrawlerTest.getMediaDataCalledOnlyOnce" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10443000" />
+    <option name="totallyTimeSpent" value="16226000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -892,7 +907,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.29787233" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.29787233" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -979,16 +994,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Service/src/ScrappingService/Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="35" column="65" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Scrapper/Crawler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -1057,10 +1062,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Service/src/ScrappingService/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/javax.ws.rs-api-2.0.jar!/javax/ws/rs/core/Response.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CrawlerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="299">
+          <caret line="196" lean-forward="true" selection-start-line="196" selection-end-line="196" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

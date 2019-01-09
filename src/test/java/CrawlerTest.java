@@ -3,18 +3,24 @@ import Interface.ISerializer;
 import Scrapper.Crawler;
 import Scrapper.PageScrapper;
 import Scrapper.PagesScrapper;
+import junitparams.JUnitParamsRunner;
+import junitparams.Parameters;
 import org.junit.Before;
 import org.junit.Test;
 import  ScrappingService.Service;
+import org.junit.runner.RunWith;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.*;
 /*import javax.ws.rs.InternalServerErrorException;*/
-import org.mockito.Mock;
+
+import javax.ws.rs.InternalServerErrorException;
+import javax.ws.rs.core.Response;
 
 import java.io.IOException;
 import java.util.List;
-
+@RunWith(JUnitParamsRunner.class)
 public class CrawlerTest {
 
 
@@ -36,7 +42,7 @@ public class CrawlerTest {
         crawler.setPagesScrapper(pagesScrapper);
         iCrawler=mock(ICrawler.class);
         iSerializer=mock(ISerializer.class);
-        service=mock(Service.class);
+        service=new Service(iCrawler,iSerializer);
 
     }
     /*this method should throws  exception when id is wrong*/
@@ -85,7 +91,9 @@ public class CrawlerTest {
 //    @Parameters(method = "getSpecific")
 //    public void getSpecificItemWithParams(String url , String name, String response) throws IOException {
 //
+//
 //    }
+
     /*
    Get all items tests
      */
@@ -95,10 +103,11 @@ public class CrawlerTest {
     public void getAllItemsTest() throws IOException{
 
         //arrange
-
+        when(iSerializer.ListOfMediaToJson(iCrawler.GetAllContents())).thenReturn("{id=1}");
         //act
-
+        service.getAll();
         //assert
+        verify(iCrawler,times(1)).GetAllContents();
 
     }
     /*this is to verify serializerListOfJson is called only once*/
@@ -107,29 +116,44 @@ public class CrawlerTest {
     public void SerlizerListToJsonTest() throws IOException{
 
         //arrange
+        when(iSerializer.ListOfMediaToJson(iCrawler.GetAllContents())).thenReturn("{id=1}");
 
         //act
+        service.getAll();
 
         //assert
+        verify(iSerializer).ListOfMediaToJson(crawler.GetAllContents());
 
     }
 
 
     /* this method is to test whether a exception is thrown or not when the results are null*/
-//    @Test(expected =InternalServerErrorException.class )
-//    public void CrawlerServiceThrowsExceptionWhenResultIsNull() throws IOException{
-//
-//    }
-//
-//
-//    /* this method is to test whether a exception is thrown or not when the results are empty are null*/
-//    @Test(expected =InternalServerErrorException.class )
-//    public void CrawlerServiceThrowsExceptionWhenResultsAreEmptyString() throws IOException{
-//
-//    }
+    @Test(expected = InternalServerErrorException.class )
+    public void CrawlerServiceThrowsExceptionWhenResultIsNull() throws IOException{
+
+
+
+
+    }
+
+
+    /* this method is to test whether a exception is thrown or not when the results are empty are null*/
+    @Test(expected =InternalServerErrorException.class )
+    public void CrawlerServiceThrowsExceptionWhenResultsAreEmptyString() throws IOException{
+
+
+    }
     /* this method will test the final proper results of this method*/
     @Test
     public void GetAllItemsShouldReturnProperResults() throws IOException{
+
+        //arrange
+        when(iSerializer.ListOfMediaToJson(crawler.GetAllContents())).thenReturn("{id = 1}");
+        //act
+        Response response;
+        response=service.getAll();
+        //assert
+        assertEquals("the expected result is :"+"{id = 1}"+ "was :"+response.toString(),"{id = 1}"+response.getEntity());
 
     }
 
@@ -154,22 +178,24 @@ public class CrawlerTest {
 
         //arrange
 
+        when(iSerializer.MediaToJson(crawler.getSepcificItems("Movies"))).thenReturn("{name = Movies}");
         //act
-
+        service.getItem("{name = Movies}");
         //assert
+        verify(iCrawler,times(1)).getSepcificItems("Movies");
 
     }
 
     /* this method is to test whether a exception is thrown or not when the results  are null*/
-//    @Test(expected =InternalServerErrorException.class )
-//    public void CrawlerServiceGetSpecificThrowsExceptionWhenResultsAreNull() throws IOException{
-//
-//    }
+    @Test(expected =InternalServerErrorException.class )
+    public void CrawlerServiceGetSpecificThrowsExceptionWhenResultsAreNull() throws IOException{
+
+    }
 //    /* this method is to test whether a exception is thrown or not when the results are empty strings*/
 //    @Test(expected =InternalServerErrorException.class )
-//    public void CrawlerServiceGetSpecificThrowsExceptionWhenResultsAreEmptyString() throws IOException{
-//
-//    }
+    public void CrawlerServiceGetSpecificThrowsExceptionWhenResultsAreEmptyString() throws IOException{
+
+    }
 
     /* this method will test the final proper results of this method*/
     @Test
