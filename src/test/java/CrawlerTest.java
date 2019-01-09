@@ -9,7 +9,7 @@ import org.junit.Before;
 import org.junit.Test;
 import  ScrappingService.Service;
 import org.junit.runner.RunWith;
-
+import static junitparams.JUnitParamsRunner.$;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.*;
@@ -18,6 +18,7 @@ import static org.mockito.Mockito.*;
 import javax.ws.rs.InternalServerErrorException;
 import javax.ws.rs.core.Response;
 
+import javax.ws.rs.InternalServerErrorException;
 import java.io.IOException;
 import java.util.List;
 @RunWith(JUnitParamsRunner.class)
@@ -32,6 +33,16 @@ public class CrawlerTest {
     private ISerializer iSerializer;
     private Service service;
 
+
+    private  final Object[] getSpecific(){
+        return  $($("http://localhost:8888","imran","{name = imran}"),
+                $("http://localhost:8888","khan","{name = khan}")
+
+        );
+
+
+    }
+
     /*this method will be executed first before test*/
     @Before
     public  void setUp(){
@@ -45,6 +56,7 @@ public class CrawlerTest {
         service=new Service(iCrawler,iSerializer);
 
     }
+
     /*this method should throws  exception when id is wrong*/
 
     @Test(expected = ArrayIndexOutOfBoundsException.class)
@@ -94,6 +106,14 @@ public class CrawlerTest {
 //
 //    }
 
+    @Test
+
+    @Parameters(method = "getSpecific")
+    public void getSpecificItemWithParams(String url , String name, String response) throws IOException {
+        when(pagesScrapper.getSpecificItems(url,name)).thenReturn(response);
+        crawler.getSepcificItems(name);
+        verify(pagesScrapper).getSpecificItems(url,name);
+    }
     /*
    Get all items tests
      */
@@ -132,6 +152,11 @@ public class CrawlerTest {
     public void CrawlerServiceThrowsExceptionWhenResultIsNull() throws IOException{
 
 
+        //arrange
+        when(iSerializer.ListOfMediaToJson(iCrawler.GetAllContents())).thenReturn(null);
+        //act
+        service.getAll();
+        //verify
 
 
     }
@@ -141,6 +166,9 @@ public class CrawlerTest {
     @Test(expected =InternalServerErrorException.class )
     public void CrawlerServiceThrowsExceptionWhenResultsAreEmptyString() throws IOException{
 
+
+        when(iSerializer.ListOfMediaToJson(iCrawler.GetAllContents())).thenReturn(null);
+        service.getAll();
 
     }
     /* this method will test the final proper results of this method*/
@@ -154,6 +182,7 @@ public class CrawlerTest {
         response=service.getAll();
         //assert
         assertEquals("the expected result is :"+"{id = 1}"+ "was :"+response.toString(),"{id = 1}"+response.getEntity());
+
 
     }
 
@@ -231,6 +260,7 @@ public class CrawlerTest {
     /* this method will test the final proper results of getItemsData*/
     @Test
     public void GetItemsDataShouldReturnProperResults() throws IOException{
+
 
     }
 
