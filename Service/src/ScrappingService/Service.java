@@ -11,7 +11,7 @@ import Interface.ICrawler;
 import Interface.ISerializer;
 
 
-@Path("catalog")
+@Path("rest")
 public class Service {
     private ICrawler crawler;
     private ISerializer serializer;
