@@ -112,7 +112,7 @@ public class CrawlerTest {
     public void getSpecificItemWithParams(String url , String name, String response) throws IOException {
         when(pagesScrapper.getSpecificItems(url,name)).thenReturn(response);
         crawler.getSepcificItems(name);
-        verify(pagesScrapper).getSpecificItems(url,name);
+        verify(pagesScrapper).getSpecificItems("localhost.pk",name);
     }
     /*
    Get all items tests
@@ -153,7 +153,7 @@ public class CrawlerTest {
 
 
         //arrange
-        when(iSerializer.ListOfMediaToJson(iCrawler.GetAllContents())).thenReturn(null);
+        when(iSerializer.ListOfMediaToJson(iCrawler.GetAllContents())).thenReturn("Lul");
         //act
         service.getAll();
         //verify
