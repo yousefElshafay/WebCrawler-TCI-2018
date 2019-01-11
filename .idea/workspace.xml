@@ -6,7 +6,13 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b4d4932-1cb2-48dc-a985-4eed22ff4bdd" name="Default Changelist" comment="" />
+    <list default="true" id="1b4d4932-1cb2-48dc-a985-4eed22ff4bdd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/CrawlerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/CrawlerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CrawlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CrawlerTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -15,6 +21,11 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
   </component>
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
@@ -72,14 +83,33 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1369195376">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="16" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="16" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/BookTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            <state relative-caret-position="306">
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,8 +120,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Service/src/ScrappingService/Service.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+            <state relative-caret-position="1071">
+              <caret line="70" selection-start-line="70" selection-end-line="70" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,7 +133,7 @@
         <entry file="file://$PROJECT_DIR$/Service/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+              <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -111,8 +141,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/CrawlerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+            <state relative-caret-position="194">
+              <caret line="97" column="9" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -183,7 +213,7 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="C:\Users\mubasher\.gradle\wrapper\dists\gradle-4.8-all\41c9mvq2w0645xx6nsenaerjl\gradle-4.8" />
+        <entry key="$PROJECT_DIR$" value="C:\Users\Ali\.gradle\wrapper\dists\gradle-4.8-all\41c9mvq2w0645xx6nsenaerjl\gradle-4.8" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -363,7 +393,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6184885768131" />
+        <entry key="$PROJECT_DIR$" value="6188850921450" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle" value="2426260262" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2585518924" />
@@ -597,6 +627,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -644,6 +676,35 @@
               <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebCrawler-TCI-2018" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebCrawler-TCI-2018" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebCrawler-TCI-2018" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Handler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebCrawler-TCI-2018" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Interface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebCrawler-TCI-2018" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -657,15 +718,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547216005953" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547216926076" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15527344" />
@@ -683,7 +741,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CrawlerTest">
+  <component name="RunManager" selected="JUnit.CrawlerTest.getSpecificItemCallsPagesCrawler">
     <configuration name="WebCrawler-TCI-2018 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -722,21 +780,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CrawlerTest.getMediaDataCalledOnlyOnce" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CrawlerTest.getAllUsesPagesCrawlerGetCategoryLinks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Crawler_test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CrawlerTest" />
-      <option name="METHOD_NAME" value="getMediaDataCalledOnlyOnce" />
+      <option name="METHOD_NAME" value="getAllUsesPagesCrawlerGetCategoryLinks" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CrawlerTest.throwsExceptionWhenIDIsInvalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CrawlerTest.getSpecificItemCallsPagesCrawler" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Crawler_test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CrawlerTest" />
-      <option name="METHOD_NAME" value="throwsExceptionWhenIDIsInvalid" />
+      <option name="METHOD_NAME" value="getSpecificItemCallsPagesCrawler" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -889,18 +947,18 @@
     <list>
       <item itemvalue="Tomcat Server.rest" />
       <item itemvalue="Gradle.WebCrawler-TCI-2018 [build]" />
-      <item itemvalue="JUnit.CrawlerTest.getMediaDataCalledOnlyOnce" />
       <item itemvalue="JUnit.CrawlerTest" />
-      <item itemvalue="JUnit.CrawlerTest.throwsExceptionWhenIDIsInvalid" />
       <item itemvalue="JUnit.CrawlerTest.ConnectionTest" />
+      <item itemvalue="JUnit.CrawlerTest.getAllUsesPagesCrawlerGetCategoryLinks" />
+      <item itemvalue="JUnit.CrawlerTest.getSpecificItemCallsPagesCrawler" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CrawlerTest.getSpecificItemCallsPagesCrawler" />
         <item itemvalue="JUnit.CrawlerTest" />
+        <item itemvalue="JUnit.CrawlerTest.getAllUsesPagesCrawlerGetCategoryLinks" />
         <item itemvalue="Gradle.WebCrawler-TCI-2018 [build]" />
         <item itemvalue="JUnit.CrawlerTest.ConnectionTest" />
-        <item itemvalue="JUnit.CrawlerTest.throwsExceptionWhenIDIsInvalid" />
-        <item itemvalue="JUnit.CrawlerTest.getMediaDataCalledOnlyOnce" />
       </list>
     </recent_temporary>
   </component>
@@ -921,48 +979,50 @@
       <workItem from="1547040360163" duration="557000" />
       <workItem from="1547040944541" duration="2314000" />
       <workItem from="1547209630206" duration="4058000" />
+      <workItem from="1547216448753" duration="489000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CrawlerTest - 2019.01.11 at 06h 09m 22s.xml">
-      <configuration name="CrawlerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CrawlerTest - 2019.01.11 at 06h 09m 27s.xml">
-      <configuration name="CrawlerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CrawlerTest - 2019.01.11 at 06h 09m 41s.xml">
-      <configuration name="CrawlerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CrawlerTest - 2019.01.11 at 06h 09m 49s.xml">
-      <configuration name="CrawlerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CrawlerTest - 2019.01.11 at 06h 09m 56s.xml">
-      <configuration name="CrawlerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CrawlerTest_throwsExceptionWhenIDIsInvalid - 2019.01.11 at 06h 10m 04s.xml">
-      <configuration name="CrawlerTest.throwsExceptionWhenIDIsInvalid" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CrawlerTest_ConnectionTest - 2019.01.11 at 06h 10m 13s.xml">
-      <configuration name="CrawlerTest.ConnectionTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CrawlerTest - 2019.01.11 at 06h 10m 34s.xml">
-      <configuration name="CrawlerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CrawlerTest - 2019.01.11 at 06h 10m 45s.xml">
-      <configuration name="CrawlerTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CrawlerTest - 2019.01.11 at 06h 10m 59s.xml">
       <configuration name="CrawlerTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CrawlerTest - 2019.01.11 at 06h 12m 27s.xml">
+      <configuration name="CrawlerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CrawlerTest - 2019.01.11 at 06h 12m 32s.xml">
+      <configuration name="CrawlerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CrawlerTest - 2019.01.11 at 06h 12m 43s.xml">
+      <configuration name="CrawlerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CrawlerTest - 2019.01.11 at 06h 14m 24s.xml">
+      <configuration name="CrawlerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CrawlerTest - 2019.01.11 at 06h 14m 32s.xml">
+      <configuration name="CrawlerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CrawlerTest - 2019.01.11 at 06h 14m 41s.xml">
+      <configuration name="CrawlerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CrawlerTest - 2019.01.11 at 06h 24m 23s.xml">
+      <configuration name="CrawlerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CrawlerTest_getAllUsesPagesCrawlerGetCategoryLinks - 2019.01.11 at 06h 24m 46s.xml">
+      <configuration name="CrawlerTest.getAllUsesPagesCrawlerGetCategoryLinks" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CrawlerTest_getAllUsesPagesCrawlerGetCategoryLinks - 2019.01.11 at 06h 25m 17s.xml">
+      <configuration name="CrawlerTest.getAllUsesPagesCrawlerGetCategoryLinks" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4078000" />
+    <option name="totallyTimeSpent" value="4696000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26928896" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2730711" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -972,15 +1032,15 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.29787233" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49319214" visible="true" weight="0.29787233" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Build" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49924356" weight="0.3289689" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50680786" side_tool="true" visible="true" weight="0.29787233" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49167928" weight="0.3289689" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" />
@@ -1047,16 +1107,6 @@
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/BookTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Scrapper/PageScrapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1065,37 +1115,6 @@
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/StringBuilder.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Scrapper/PagesScrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Interface/ISerializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Handler/Serializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Interface/ICrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Interface/IAlgorithm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1117,16 +1136,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Service/src/ScrappingService/Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/MusicTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1134,10 +1143,75 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/BookTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Service/src/ScrappingService/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Service/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Interface/ICrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Interface/ISerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Scrapper/PagesScrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Handler/MediaData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Handler/Serializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CrawlerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+        <state relative-caret-position="194">
+          <caret line="97" column="9" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

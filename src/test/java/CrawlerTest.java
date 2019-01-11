@@ -34,7 +34,7 @@ public class CrawlerTest {
     private Service service;
 
 
-    private  final Object[] getSpecific(){
+    private final Object[] getSpecific(){
         return  $($("http://localhost:8888","imran","{name = imran}"),
                 $("http://localhost:8888","khan","{name = khan}")
 
@@ -75,7 +75,7 @@ public class CrawlerTest {
     /*Check if the URL is the same*/
     @Test
     public void URL()throws IOException{
-        assertEquals(crawler.BaseURL,"http://localhost:8888");
+        assertEquals(crawler.BaseURL,"http://l");
 
 
     }
@@ -85,7 +85,7 @@ public class CrawlerTest {
 
         when(pagesScrapper.getLinksOfCategory("http://localhost:8888")).thenReturn(NullValue);
 
-        crawler.GetAllContents();
+//        crawler.GetAllContents();
         verify(pagesScrapper).getLinksOfCategory("http://localhost:8888");
 
     }
@@ -93,9 +93,9 @@ public class CrawlerTest {
     @Test
     public void getSpecificItemCallsPagesCrawler() throws IOException {
 
-        when(pagesScrapper.getSpecificItems("http://localhost:8888","Name")).thenReturn("{name=Name}");
+        when(pagesScrapper.getSpecificItems("http://localhost:8888","")).thenReturn("ukg");
 
-        crawler.getSepcificItems("Name");
+       // crawler.getSepcificItems("Name");
         verify(pagesScrapper).getSpecificItems("http://localhost:8888","Name");
 
     }
