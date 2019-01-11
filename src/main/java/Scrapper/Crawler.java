@@ -91,8 +91,7 @@ public class Crawler implements ICrawler {
     }
 
     @Override
-    public String getSepcificItems(String Item)
-    {
+    public String getSepcificItems(String Item) throws IOException {
         this.Id++;
 
         // Time start

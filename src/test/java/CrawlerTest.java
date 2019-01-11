@@ -3,7 +3,6 @@ import Interface.ISerializer;
 import Scrapper.Crawler;
 import Scrapper.PageScrapper;
 import Scrapper.PagesScrapper;
-import javafx.beans.binding.When;
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
 import org.junit.Assert;
@@ -12,10 +11,6 @@ import org.junit.Test;
 import  ScrappingService.Service;
 import org.junit.runner.RunWith;
 import static junitparams.JUnitParamsRunner.$;
-<<<<<<< HEAD
-
-=======
->>>>>>> 177c986e213df817f3cb1acf1a8260fbb40ce292
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.*;
@@ -104,8 +99,6 @@ public class CrawlerTest {
         verify(pagesScrapper).getSpecificItems("http://localhost:8888","Name");
 
     }
-<<<<<<< HEAD
-=======
 //    @Test
 //    @Parameters(method = "getSpecific")
 //    public void getSpecificItemWithParams(String url , String name, String response) throws IOException {
@@ -113,7 +106,6 @@ public class CrawlerTest {
 //
 //    }
 
->>>>>>> 177c986e213df817f3cb1acf1a8260fbb40ce292
     @Test
 
     @Parameters(method = "getSpecific")
@@ -122,10 +114,6 @@ public class CrawlerTest {
         crawler.getSepcificItems(name);
         verify(pagesScrapper).getSpecificItems(url,name);
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> 177c986e213df817f3cb1acf1a8260fbb40ce292
     /*
    Get all items tests
      */
@@ -169,10 +157,7 @@ public class CrawlerTest {
         //act
         service.getAll();
         //verify
-<<<<<<< HEAD
 
-=======
->>>>>>> 177c986e213df817f3cb1acf1a8260fbb40ce292
 
 
     }
@@ -181,16 +166,13 @@ public class CrawlerTest {
     /* this method is to test whether a exception is thrown or not when the results are empty are null*/
     @Test(expected =InternalServerErrorException.class )
     public void CrawlerServiceThrowsExceptionWhenResultsAreEmptyString() throws IOException{
-<<<<<<< HEAD
         when(iSerializer.ListOfMediaToJson(iCrawler.GetAllContents())).thenReturn(null);
         service.getAll();
 
-=======
 
 
         when(iSerializer.ListOfMediaToJson(iCrawler.GetAllContents())).thenReturn(null);
         service.getAll();
->>>>>>> 177c986e213df817f3cb1acf1a8260fbb40ce292
 
     }
     /* this method will test the final proper results of this method*/
@@ -204,10 +186,7 @@ public class CrawlerTest {
         response=service.getAll();
         //assert
         assertEquals("the expected result is :"+"{id = 1}"+ "was :"+response.toString(),"{id = 1}"+response.getEntity());
-<<<<<<< HEAD
-=======
 
->>>>>>> 177c986e213df817f3cb1acf1a8260fbb40ce292
 
     }
 
@@ -244,11 +223,8 @@ public class CrawlerTest {
     @Test(expected =InternalServerErrorException.class )
     public void CrawlerServiceGetSpecificThrowsExceptionWhenResultsAreNull() throws IOException{
 
-<<<<<<< HEAD
         when(iSerializer.MediaToJson(iCrawler.getSepcificItems("Book"))).thenReturn(null);
         service.getAll();
-=======
->>>>>>> 177c986e213df817f3cb1acf1a8260fbb40ce292
 
     }
 //    /* this method is to test whether a exception is thrown or not when the results are empty strings*/
