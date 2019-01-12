@@ -33,6 +33,9 @@ public class BookTest {
     @Test
     public void bookShouldHaveISBN(){
         Assert.assertNotNull(testbook.getIsbn());
+
+        Assert.assertEquals(testbook.getIsbn(),"2764");
+
     }
 
     @Test
