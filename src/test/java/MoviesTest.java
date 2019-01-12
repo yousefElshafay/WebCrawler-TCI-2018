@@ -40,5 +40,22 @@ public class MoviesTest {
 
     }
 
+    @Test
+    public void getGenre() {
+        Assert.assertNotNull(testmovie.getGenre());
+
+    }
+
+    @Test
+    public void getFormat() {
+        Assert.assertNotNull(testmovie.getFormat());
+
+    }
+
+    @Test
+    public void getYear() {
+        Assert.assertNotNull(testmovie.getYear());
+    }
+
 
 }
