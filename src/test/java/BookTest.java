@@ -9,6 +9,7 @@ public class BookTest {
     @Before
     public void setUp(){
 
+        //test
         testbook = new Books("testformat","science fiction",1993,"bill heffnton","sun","27642");
     }
     /*this method will check if the book has a author or not*/
