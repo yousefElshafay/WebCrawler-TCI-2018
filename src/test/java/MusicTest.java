@@ -17,6 +17,8 @@ public class MusicTest {
     public  void musicShouldHaveArtist(){
         Assert.assertNotNull(testmusic.getArtist());
 
+        Assert.assertEquals(testmusic.getArtist(),"metal");
+
     }
 
 
