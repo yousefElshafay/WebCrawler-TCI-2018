@@ -35,10 +35,18 @@ public class MoviesTest {
 // check the writer of the movie
 
         Assert.assertNotNull(testmovie.getYear());
+        Assert.assertEquals(testmovie.getYear(),2005);
+
     }
     @Test
     public void shouldHaveWriter (){
+        List<Integer> testfakelistofstars  = new ArrayList<>();
+        List<String> testfakelistofWriters = new ArrayList<>();
+
+        testfakelistofstars.add(9);
+        testfakelistofWriters.add("marvin edwin");
         Assert.assertNotNull(testmovie.getWirters());
+        Assert.assertEquals(testmovie.getWirters(),"whoknows");
 
     }
 
