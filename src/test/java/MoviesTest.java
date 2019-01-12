@@ -27,7 +27,6 @@ public class MoviesTest {
         Assert.assertNotNull(testmovie.getDirctor());
 
         Assert.assertEquals(testmovie.getDirctor(),"whoknows");
-
     }
     // check the year of the movie
     @Test
@@ -36,7 +35,6 @@ public class MoviesTest {
 
         Assert.assertNotNull(testmovie.getYear());
         Assert.assertEquals(testmovie.getYear(),2005);
-
     }
     @Test
     public void shouldHaveWriter (){
@@ -45,7 +43,6 @@ public class MoviesTest {
         testfakelistofWriters.add("marvin edwin");
         Assert.assertNotNull(testmovie.getWirters());
         Assert.assertEquals(testmovie.getWirters(),testfakelistofWriters);
-
     }
 
     @Test
@@ -53,18 +50,15 @@ public class MoviesTest {
     {
         List<Integer> testfakelistofstars  = new ArrayList<>();
         testfakelistofstars.add(4);
-
         Assert.assertNotNull(testmovie.getStars());
 
         Assert.assertEquals(testmovie.getStars(),testfakelistofstars);
-
     }
     @Test
     public void getFormat() {
         Assert.assertNotNull(testmovie.getFormat());
 
         Assert.assertEquals(testmovie.getFormat(),"comedy");
-
     }
 
     @Test
@@ -72,6 +66,4 @@ public class MoviesTest {
         Assert.assertNotNull(testmovie.getYear());
         Assert.assertEquals(testmovie.getYear(),2005);
     }
-
-
 }

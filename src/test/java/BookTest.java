@@ -35,28 +35,23 @@ public class BookTest {
         Assert.assertNotNull(testbook.getIsbn());
 
         Assert.assertEquals(testbook.getIsbn(),"27642");
-
     }
 
     @Test
     public void getGenre() {
         Assert.assertNotNull(testbook.getGenre());
         Assert.assertEquals(testbook.getGenre(),"testformat");
-
     }
 
     @Test
     public void getFormat() {
         Assert.assertNotNull(testbook.getFormat());
         Assert.assertEquals(testbook.getFormat(),"science fiction");
-
-
     }
 
     @Test
     public void getYear() {
         Assert.assertNotNull(testbook.getYear());
         Assert.assertEquals(testbook.getYear(),1993);
-
     }
 }
