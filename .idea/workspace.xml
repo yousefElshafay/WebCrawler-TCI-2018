@@ -89,15 +89,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/MediaLibrary/Books.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MediaLibrary/Media.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
@@ -109,12 +100,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/MoviesTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
-              <folding>
-                <element signature="e#1265#1266#0" expanded="true" />
-                <element signature="e#1321#1322#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="276">
+              <caret line="58" column="48" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/MediaLibrary/Movies.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="28" column="33" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -264,6 +260,27 @@
               <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebCrawler-TCI-2018" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebCrawler-TCI-2018" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebCrawler-TCI-2018" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="MediaLibrary" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebCrawler-TCI-2018" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -289,7 +306,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547259238888" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547259826605" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -323,7 +340,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MoviesTest.shouldHaveDirector">
+  <component name="RunManager" selected="JUnit.MoviesTest">
     <configuration name="BookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Crawler_test" />
       <option name="PACKAGE_NAME" value="" />
@@ -332,32 +349,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookTest.bookShoulHaveAuthor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MoviesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Crawler_test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BookTest" />
-      <option name="METHOD_NAME" value="bookShoulHaveAuthor" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BookTest.bookShouldHaveISBN" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Crawler_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BookTest" />
-      <option name="METHOD_NAME" value="bookShouldHaveISBN" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BookTest.bookShouldHavePublisher" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Crawler_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BookTest" />
-      <option name="METHOD_NAME" value="bookShouldHavePublisher" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="MoviesTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -372,20 +367,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MoviesTest.shouldHaveWriter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Crawler_test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MoviesTest" />
+      <option name="METHOD_NAME" value="shouldHaveWriter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MoviesTest.shouldHaveYear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Crawler_test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MoviesTest" />
+      <option name="METHOD_NAME" value="shouldHaveYear" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.BookTest" />
-      <item itemvalue="JUnit.BookTest.bookShoulHaveAuthor" />
-      <item itemvalue="JUnit.BookTest.bookShouldHavePublisher" />
-      <item itemvalue="JUnit.BookTest.bookShouldHaveISBN" />
       <item itemvalue="JUnit.MoviesTest.shouldHaveDirector" />
+      <item itemvalue="JUnit.MoviesTest.shouldHaveYear" />
+      <item itemvalue="JUnit.MoviesTest.shouldHaveWriter" />
+      <item itemvalue="JUnit.MoviesTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MoviesTest" />
+        <item itemvalue="JUnit.MoviesTest.shouldHaveWriter" />
+        <item itemvalue="JUnit.MoviesTest.shouldHaveYear" />
         <item itemvalue="JUnit.MoviesTest.shouldHaveDirector" />
         <item itemvalue="JUnit.BookTest" />
-        <item itemvalue="JUnit.BookTest.bookShouldHaveISBN" />
-        <item itemvalue="JUnit.BookTest.bookShouldHavePublisher" />
-        <item itemvalue="JUnit.BookTest.bookShoulHaveAuthor" />
       </list>
     </recent_temporary>
   </component>
@@ -406,7 +421,7 @@
       <workItem from="1547036323482" duration="135000" />
       <workItem from="1547036462591" duration="293000" />
       <workItem from="1547220958110" duration="377000" />
-      <workItem from="1547254063894" duration="3188000" />
+      <workItem from="1547254063894" duration="3773000" />
     </task>
     <task id="LOCAL-00001" summary="basic test cases">
       <created>1547254780396</created>
@@ -499,25 +514,24 @@
       <option name="project" value="LOCAL" />
       <updated>1547259225706</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="refactor and passing test in Movie Test class">
+      <created>1547259266127</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1547259266127</updated>
+    </task>
+    <task id="LOCAL-00015" summary="test fail for should have writers in Movie Test class">
+      <created>1547259484654</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1547259484654</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BookTest_bookShoulHaveAuthor - 2019.01.12 at 03h 02m 27s.xml">
-      <configuration name="BookTest.bookShoulHaveAuthor" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BookTest - 2019.01.12 at 03h 02m 36s.xml">
-      <configuration name="BookTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BookTest_bookShouldHavePublisher - 2019.01.12 at 03h 03m 37s.xml">
-      <configuration name="BookTest.bookShouldHavePublisher" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BookTest - 2019.01.12 at 03h 04m 34s.xml">
-      <configuration name="BookTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BookTest_bookShouldHaveISBN - 2019.01.12 at 03h 05m 42s.xml">
-      <configuration name="BookTest.bookShouldHaveISBN" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BookTest - 2019.01.12 at 03h 06m 18s.xml">
       <configuration name="BookTest" configurationId="JUnit" />
     </history-entry>
@@ -533,9 +547,24 @@
     <history-entry file="MoviesTest_shouldHaveDirector - 2019.01.12 at 03h 13m 25s.xml">
       <configuration name="MoviesTest.shouldHaveDirector" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MoviesTest_shouldHaveDirector - 2019.01.12 at 03h 14m 04s.xml">
+      <configuration name="MoviesTest.shouldHaveDirector" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MoviesTest_shouldHaveDirector - 2019.01.12 at 03h 14m 09s.xml">
+      <configuration name="MoviesTest.shouldHaveDirector" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MoviesTest_shouldHaveYear - 2019.01.12 at 03h 14m 59s.xml">
+      <configuration name="MoviesTest.shouldHaveYear" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MoviesTest_shouldHaveWriter - 2019.01.12 at 03h 17m 27s.xml">
+      <configuration name="MoviesTest.shouldHaveWriter" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MoviesTest - 2019.01.12 at 03h 23m 12s.xml">
+      <configuration name="MoviesTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14436000" />
+    <option name="totallyTimeSpent" value="15021000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="849" extended-state="6" />
@@ -552,7 +581,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.2972259" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3989432" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -597,20 +626,15 @@
     <MESSAGE value="getgenre and getformat methods test fail in BookTest class" />
     <MESSAGE value="all test pass in book Test class" />
     <MESSAGE value="get director test fail in Movietest class" />
-    <option name="LAST_COMMIT_MESSAGE" value="get director test fail in Movietest class" />
+    <MESSAGE value="refactor and passing test in Movie Test class" />
+    <MESSAGE value="test fail for should have writers in Movie Test class" />
+    <option name="LAST_COMMIT_MESSAGE" value="test fail for should have writers in Movie Test class" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Service/src/example/CrawlingService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/MediaLibrary/Movies.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Scrapper/PageScrapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -769,14 +793,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MediaLibrary/Movies.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/MoviesTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
-          <folding>
-            <element signature="e#1265#1266#0" expanded="true" />
-            <element signature="e#1321#1322#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="276">
+          <caret line="58" column="48" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
         </state>
       </provider>
     </entry>
