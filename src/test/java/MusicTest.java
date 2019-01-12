@@ -17,7 +17,7 @@ public class MusicTest {
     public  void musicShouldHaveArtist(){
         Assert.assertNotNull(testmusic.getArtist());
 
-        Assert.assertEquals(testmusic.getArtist(),"metal");
+        Assert.assertEquals(testmusic.getArtist(),"metallica");
 
     }
 
@@ -27,17 +27,22 @@ public class MusicTest {
     public void getGenre() {
         Assert.assertNotNull(testmusic.getGenre());
 
+        Assert.assertEquals(testmusic.getGenre(),"rock");
+
     }
 
     @Test
     public void getFormat() {
         Assert.assertNotNull(testmusic.getFormat());
 
+        Assert.assertEquals(testmusic.getFormat(),"format");
     }
 
     @Test
     public void getYear() {
         Assert.assertNotNull(testmusic.getYear());
+        Assert.assertEquals(testmusic.getYear(),1996);
+
     }
 
 
