@@ -19,7 +19,7 @@ public class BookTest {
 
         //test the actual value of return string
 
-        Assert.assertEquals(testbook.getAuthor()," heffnton");
+        Assert.assertEquals(testbook.getAuthor(),"bill heffnton");
     }
     /*this method will test if the book has a publisher*/
     @Test
