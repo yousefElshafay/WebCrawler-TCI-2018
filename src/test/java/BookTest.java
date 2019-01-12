@@ -16,6 +16,10 @@ public class BookTest {
     @Test
     public void bookShoulHaveAuthor(){
         Assert.assertNotNull(testbook.getAuthor());
+
+        //test the actual value of return string
+
+        Assert.assertEquals(testbook.getAuthor()," heffnton");
     }
     /*this method will test if the book has a publisher*/
     @Test
