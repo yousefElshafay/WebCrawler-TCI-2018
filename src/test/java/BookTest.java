@@ -26,6 +26,8 @@ public class BookTest {
     public void bookShouldHavePublisher(){
         Assert.assertNotNull(testbook.getPublisher());
 
+        Assert.assertEquals(testbook.getPublisher(),"bill heffnton");
+
     }
     /*this method will test if the book has an ISBN*/
     @Test
