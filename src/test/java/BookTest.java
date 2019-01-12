@@ -41,14 +41,14 @@ public class BookTest {
     @Test
     public void getGenre() {
         Assert.assertNotNull(testbook.getGenre());
-        Assert.assertEquals(testbook.getGenre(),"science fiction");
+        Assert.assertEquals(testbook.getGenre(),"testformat");
 
     }
 
     @Test
     public void getFormat() {
         Assert.assertNotNull(testbook.getFormat());
-        Assert.assertEquals(testbook.getFormat(),"testformat");
+        Assert.assertEquals(testbook.getFormat(),"science fiction");
 
 
     }
