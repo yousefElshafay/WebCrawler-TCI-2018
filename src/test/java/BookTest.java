@@ -28,4 +28,21 @@ public class BookTest {
     public void bookShouldHaveISBN(){
         Assert.assertNotNull(testbook.getIsbn());
     }
+
+    @Test
+    public void getGenre() {
+        Assert.assertNotNull(testbook.getGenre());
+
+    }
+
+    @Test
+    public void getFormat() {
+        Assert.assertNotNull(testbook.getFormat());
+
+    }
+
+    @Test
+    public void getYear() {
+        Assert.assertNotNull(testbook.getYear());
+    }
 }
