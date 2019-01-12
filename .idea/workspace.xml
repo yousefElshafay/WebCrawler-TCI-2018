@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1b4d4932-1cb2-48dc-a985-4eed22ff4bdd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BookTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MoviesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MoviesTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -55,11 +55,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/BookTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="50" column="65" selection-start-line="50" selection-start-column="65" selection-end-line="50" selection-end-column="65" />
+            <state relative-caret-position="315">
+              <caret line="21" column="32" selection-start-line="21" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -106,11 +106,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/MoviesTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="57" column="5" lean-forward="true" selection-start-line="42" selection-start-column="2" selection-end-line="57" selection-end-column="5" />
+            <state relative-caret-position="256">
+              <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
               <folding>
                 <element signature="e#1265#1266#0" expanded="true" />
                 <element signature="e#1321#1322#0" expanded="true" />
@@ -209,9 +209,9 @@
         <option value="$PROJECT_DIR$/src/test/java/CrawlerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/MediaLibrary/Music.java" />
         <option value="$PROJECT_DIR$/src/test/java/MediaLibrary/MediaTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/MoviesTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/MusicTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/BookTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/MoviesTest.java" />
       </list>
     </option>
   </component>
@@ -289,7 +289,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547258959033" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547259201726" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -323,7 +323,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BookTest">
+  <component name="RunManager" selected="JUnit.MoviesTest.shouldHaveDirector">
     <configuration name="BookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Crawler_test" />
       <option name="PACKAGE_NAME" value="" />
@@ -362,30 +362,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookTest.getFormat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MoviesTest.shouldHaveDirector" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Crawler_test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BookTest" />
-      <option name="METHOD_NAME" value="getFormat" />
+      <option name="MAIN_CLASS_NAME" value="MoviesTest" />
+      <option name="METHOD_NAME" value="shouldHaveDirector" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.BookTest.getFormat" />
       <item itemvalue="JUnit.BookTest" />
       <item itemvalue="JUnit.BookTest.bookShoulHaveAuthor" />
       <item itemvalue="JUnit.BookTest.bookShouldHavePublisher" />
       <item itemvalue="JUnit.BookTest.bookShouldHaveISBN" />
+      <item itemvalue="JUnit.MoviesTest.shouldHaveDirector" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MoviesTest.shouldHaveDirector" />
         <item itemvalue="JUnit.BookTest" />
         <item itemvalue="JUnit.BookTest.bookShouldHaveISBN" />
         <item itemvalue="JUnit.BookTest.bookShouldHavePublisher" />
         <item itemvalue="JUnit.BookTest.bookShoulHaveAuthor" />
-        <item itemvalue="JUnit.BookTest.getFormat" />
       </list>
     </recent_temporary>
   </component>
@@ -406,7 +406,7 @@
       <workItem from="1547036323482" duration="135000" />
       <workItem from="1547036462591" duration="293000" />
       <workItem from="1547220958110" duration="377000" />
-      <workItem from="1547254063894" duration="2931000" />
+      <workItem from="1547254063894" duration="3127000" />
     </task>
     <task id="LOCAL-00001" summary="basic test cases">
       <created>1547254780396</created>
@@ -485,13 +485,17 @@
       <option name="project" value="LOCAL" />
       <updated>1547258931671</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="all test pass in book Test class">
+      <created>1547258989626</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1547258989626</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BookTest_getFormat - 2019.01.12 at 02h 29m 14s.xml">
-      <configuration name="BookTest.getFormat" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BookTest - 2019.01.12 at 02h 29m 24s.xml">
       <configuration name="BookTest" configurationId="JUnit" />
     </history-entry>
@@ -519,15 +523,18 @@
     <history-entry file="BookTest - 2019.01.12 at 03h 07m 52s.xml">
       <configuration name="BookTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BookTest - 2019.01.12 at 03h 09m 22s.xml">
+      <configuration name="BookTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14179000" />
+    <option name="totallyTimeSpent" value="14375000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="849" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26824033" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26824033" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -537,7 +544,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.2972259" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.2972259" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -581,7 +588,8 @@
     <MESSAGE value="refactor and pass all test in BookTest class" />
     <MESSAGE value="test fail for get isbn in bookTest class" />
     <MESSAGE value="getgenre and getformat methods test fail in BookTest class" />
-    <option name="LAST_COMMIT_MESSAGE" value="getgenre and getformat methods test fail in BookTest class" />
+    <MESSAGE value="all test pass in book Test class" />
+    <option name="LAST_COMMIT_MESSAGE" value="all test pass in book Test class" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -729,17 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MoviesTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="57" column="5" lean-forward="true" selection-start-line="42" selection-start-column="2" selection-end-line="57" selection-end-column="5" />
-          <folding>
-            <element signature="e#1265#1266#0" expanded="true" />
-            <element signature="e#1321#1322#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/MusicTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -756,10 +753,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BookTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="50" column="65" selection-start-line="50" selection-start-column="65" selection-end-line="50" selection-end-column="65" />
+        <state relative-caret-position="315">
+          <caret line="21" column="32" selection-start-line="21" selection-end-line="22" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MoviesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+          <folding>
+            <element signature="e#1265#1266#0" expanded="true" />
+            <element signature="e#1321#1322#0" expanded="true" />
           </folding>
         </state>
       </provider>
