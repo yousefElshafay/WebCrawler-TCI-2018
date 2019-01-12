@@ -58,12 +58,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/BookTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="36" column="52" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
+            <state relative-caret-position="347">
+              <caret line="58" column="51" selection-start-line="58" selection-start-column="51" selection-end-line="58" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1092#1093#0" expanded="true" />
-                <element signature="e#1148#1149#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -291,7 +289,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547258738978" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547258868409" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -325,7 +323,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BookTest.bookShouldHaveISBN">
+  <component name="RunManager" selected="JUnit.BookTest">
     <configuration name="BookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Crawler_test" />
       <option name="PACKAGE_NAME" value="" />
@@ -383,8 +381,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BookTest.bookShouldHaveISBN" />
         <item itemvalue="JUnit.BookTest" />
+        <item itemvalue="JUnit.BookTest.bookShouldHaveISBN" />
         <item itemvalue="JUnit.BookTest.bookShouldHavePublisher" />
         <item itemvalue="JUnit.BookTest.bookShoulHaveAuthor" />
         <item itemvalue="JUnit.BookTest.getFormat" />
@@ -408,7 +406,7 @@
       <workItem from="1547036323482" duration="135000" />
       <workItem from="1547036462591" duration="293000" />
       <workItem from="1547220958110" duration="377000" />
-      <workItem from="1547254063894" duration="2712000" />
+      <workItem from="1547254063894" duration="2835000" />
     </task>
     <task id="LOCAL-00001" summary="basic test cases">
       <created>1547254780396</created>
@@ -473,16 +471,17 @@
       <option name="project" value="LOCAL" />
       <updated>1547258698613</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="test fail for get isbn in bookTest class">
+      <created>1547258764685</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1547258764685</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CrawlerTest_getSpecificItemCallsPagesCrawler - 2019.01.08 at 15h 44m 58s.xml">
-      <configuration name="CrawlerTest.getSpecificItemCallsPagesCrawler" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CrawlerTest_getSpecificItemCallsPagesCrawler - 2019.01.08 at 15h 46m 19s.xml">
-      <configuration name="CrawlerTest.getSpecificItemCallsPagesCrawler" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CrawlerTest_ConnectionTest - 2019.01.08 at 15h 49m 37s.xml">
       <configuration name="CrawlerTest.ConnectionTest" configurationId="JUnit" />
     </history-entry>
@@ -507,9 +506,15 @@
     <history-entry file="BookTest - 2019.01.12 at 03h 04m 34s.xml">
       <configuration name="BookTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BookTest_bookShouldHaveISBN - 2019.01.12 at 03h 05m 42s.xml">
+      <configuration name="BookTest.bookShouldHaveISBN" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookTest - 2019.01.12 at 03h 06m 18s.xml">
+      <configuration name="BookTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13960000" />
+    <option name="totallyTimeSpent" value="14083000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="849" extended-state="6" />
@@ -567,7 +572,8 @@
     <MESSAGE value="refactor and passing test in BookTest class" />
     <MESSAGE value="test fail for getpublisher in BookTest class" />
     <MESSAGE value="refactor and pass all test in BookTest class" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor and pass all test in BookTest class" />
+    <MESSAGE value="test fail for get isbn in bookTest class" />
+    <option name="LAST_COMMIT_MESSAGE" value="test fail for get isbn in bookTest class" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -742,12 +748,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BookTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="36" column="52" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
+        <state relative-caret-position="347">
+          <caret line="58" column="51" selection-start-line="58" selection-start-column="51" selection-end-line="58" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1092#1093#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
           </folding>
         </state>
       </provider>
