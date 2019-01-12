@@ -26,7 +26,7 @@ public class MoviesTest {
     public void shouldHaveDirector (){
         Assert.assertNotNull(testmovie.getDirctor());
 
-        Assert.assertEquals(testmovie.getDirctor(),"whoknow");
+        Assert.assertEquals(testmovie.getDirctor(),"whoknows");
 
     }
     // check the year of the movie

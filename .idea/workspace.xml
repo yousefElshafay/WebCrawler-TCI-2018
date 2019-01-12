@@ -109,7 +109,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/MoviesTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
+            <state relative-caret-position="205">
               <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
               <folding>
                 <element signature="e#1265#1266#0" expanded="true" />
@@ -289,7 +289,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547259201726" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547259238888" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -406,7 +406,7 @@
       <workItem from="1547036323482" duration="135000" />
       <workItem from="1547036462591" duration="293000" />
       <workItem from="1547220958110" duration="377000" />
-      <workItem from="1547254063894" duration="3127000" />
+      <workItem from="1547254063894" duration="3188000" />
     </task>
     <task id="LOCAL-00001" summary="basic test cases">
       <created>1547254780396</created>
@@ -492,16 +492,17 @@
       <option name="project" value="LOCAL" />
       <updated>1547258989626</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="get director test fail in Movietest class">
+      <created>1547259225706</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1547259225706</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BookTest - 2019.01.12 at 02h 29m 24s.xml">
-      <configuration name="BookTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BookTest_bookShoulHaveAuthor - 2019.01.12 at 03h 01m 37s.xml">
-      <configuration name="BookTest.bookShoulHaveAuthor" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BookTest_bookShoulHaveAuthor - 2019.01.12 at 03h 02m 27s.xml">
       <configuration name="BookTest.bookShoulHaveAuthor" configurationId="JUnit" />
     </history-entry>
@@ -526,15 +527,21 @@
     <history-entry file="BookTest - 2019.01.12 at 03h 09m 22s.xml">
       <configuration name="BookTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MoviesTest_shouldHaveDirector - 2019.01.12 at 03h 13m 12s.xml">
+      <configuration name="MoviesTest.shouldHaveDirector" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MoviesTest_shouldHaveDirector - 2019.01.12 at 03h 13m 25s.xml">
+      <configuration name="MoviesTest.shouldHaveDirector" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14375000" />
+    <option name="totallyTimeSpent" value="14436000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="849" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26824033" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26824033" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -544,7 +551,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.2972259" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.2972259" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -589,7 +596,8 @@
     <MESSAGE value="test fail for get isbn in bookTest class" />
     <MESSAGE value="getgenre and getformat methods test fail in BookTest class" />
     <MESSAGE value="all test pass in book Test class" />
-    <option name="LAST_COMMIT_MESSAGE" value="all test pass in book Test class" />
+    <MESSAGE value="get director test fail in Movietest class" />
+    <option name="LAST_COMMIT_MESSAGE" value="get director test fail in Movietest class" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -763,7 +771,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/MoviesTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
+        <state relative-caret-position="205">
           <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
           <folding>
             <element signature="e#1265#1266#0" expanded="true" />
