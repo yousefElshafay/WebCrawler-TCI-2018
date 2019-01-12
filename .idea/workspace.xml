@@ -118,14 +118,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/MusicTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="37" column="57" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
+            <state relative-caret-position="320">
+              <caret line="43" column="52" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#241#242#0" expanded="true" />
                 <element signature="e#312#313#0" expanded="true" />
-                <element signature="e#724#725#0" expanded="true" />
-                <element signature="e#781#782#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -306,7 +304,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547260013424" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547260049260" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -421,7 +419,7 @@
       <workItem from="1547036323482" duration="135000" />
       <workItem from="1547036462591" duration="293000" />
       <workItem from="1547220958110" duration="377000" />
-      <workItem from="1547254063894" duration="3930000" />
+      <workItem from="1547254063894" duration="3994000" />
     </task>
     <task id="LOCAL-00001" summary="basic test cases">
       <created>1547254780396</created>
@@ -542,13 +540,17 @@
       <option name="project" value="LOCAL" />
       <updated>1547259925028</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="get year test fail in Music Test class">
+      <created>1547260035728</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1547260035728</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BookTest - 2019.01.12 at 03h 09m 22s.xml">
-      <configuration name="BookTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MoviesTest_shouldHaveDirector - 2019.01.12 at 03h 13m 12s.xml">
       <configuration name="MoviesTest.shouldHaveDirector" configurationId="JUnit" />
     </history-entry>
@@ -576,9 +578,12 @@
     <history-entry file="MusicTest_musicShouldHaveArtist - 2019.01.12 at 03h 25m 06s.xml">
       <configuration name="MusicTest.musicShouldHaveArtist" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MusicTest - 2019.01.12 at 03h 26m 57s.xml">
+      <configuration name="MusicTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15178000" />
+    <option name="totallyTimeSpent" value="15242000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="849" extended-state="6" />
@@ -644,7 +649,8 @@
     <MESSAGE value="test fail for should have writers in Movie Test class" />
     <MESSAGE value="refactor Movie Test class and all test passes" />
     <MESSAGE value="getartist test fail in Music Test class" />
-    <option name="LAST_COMMIT_MESSAGE" value="getartist test fail in Music Test class" />
+    <MESSAGE value="get year test fail in Music Test class" />
+    <option name="LAST_COMMIT_MESSAGE" value="get year test fail in Music Test class" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -811,14 +817,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/MusicTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="37" column="57" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
+        <state relative-caret-position="320">
+          <caret line="43" column="52" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#241#242#0" expanded="true" />
             <element signature="e#312#313#0" expanded="true" />
-            <element signature="e#724#725#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
           </folding>
         </state>
       </provider>

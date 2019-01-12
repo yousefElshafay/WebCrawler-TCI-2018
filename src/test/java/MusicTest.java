@@ -41,7 +41,7 @@ public class MusicTest {
     @Test
     public void getYear() {
         Assert.assertNotNull(testmusic.getYear());
-        Assert.assertEquals(testmusic.getYear(),1996);
+        Assert.assertEquals(testmusic.getYear(),1997);
 
     }
 
