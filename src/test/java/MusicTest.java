@@ -21,4 +21,22 @@ public class MusicTest {
 
 
 
+    @Test
+    public void getGenre() {
+        Assert.assertNotNull(testmusic.getGenre());
+
+    }
+
+    @Test
+    public void getFormat() {
+        Assert.assertNotNull(testmusic.getFormat());
+
+    }
+
+    @Test
+    public void getYear() {
+        Assert.assertNotNull(testmusic.getYear());
+    }
+
+
 }
