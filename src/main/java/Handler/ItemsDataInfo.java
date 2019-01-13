@@ -1,8 +1,8 @@
 package Handler;
 
-import Interface.IAlgorithm;
+import Interface.IitemsDataInfo;
 
-public class Algorithm implements IAlgorithm {
+public class ItemsDataInfo implements IitemsDataInfo {
     @Override
     public MediaData GetItemsData(int data) {
         return null;

@@ -2,7 +2,7 @@ package Interface;
 
 import Handler.MediaData;
 
-public interface IAlgorithm{
+public interface IitemsDataInfo {
 
 MediaData GetItemsData(int data);
 }

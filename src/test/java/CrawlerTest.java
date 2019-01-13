@@ -9,7 +9,7 @@ import junitparams.Parameters;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import  ScrappingService.Service;
+import ScrappingService.Service;
 import org.junit.runner.RunWith;
 import static junitparams.JUnitParamsRunner.$;
 import static org.junit.Assert.assertEquals;
