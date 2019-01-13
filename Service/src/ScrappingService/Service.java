@@ -1,6 +1,4 @@
 package ScrappingService;
-
-
 import javax.ws.rs.Path;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -67,7 +65,6 @@ public class Service {
         } else {
             return Response.ok(mediaData).build();
         }
-
 
     }
 
