@@ -23,12 +23,15 @@ public class CrawlerTest {
 
 
     private static final List<String> NullValue=null;
+    private static final String Correct_Value="{ id = 1 }";
+
     private Crawler crawler;
     private PageScrapper pageScrapper;
     private PagesScrapper pagesScrapper;
     private ICrawler iCrawler;
     private ISerializer iSerializer;
     private Service service;
+
 
 
     private final Object[] getAllItems() {
@@ -55,8 +58,8 @@ public class CrawlerTest {
 
 
     private final Object[] getSpecific(){
-        return  $($("http://localhost:80","imran","{name = imran}"),
-                $("http://localhost:80","khan","{name = khan}")
+        return  $($("http://localhost:88","Book","{name = Book}"),
+                $("http://localhost:88","Music","{name = Music}")
 
         );
 
@@ -68,7 +71,7 @@ public class CrawlerTest {
     public  void setUp(){
         pageScrapper = mock(PageScrapper.class);
         pagesScrapper = mock(PagesScrapper.class);
-        crawler = new Crawler("http://localhost:80");
+        crawler = new Crawler("http://localhost:88");
         crawler.setPageScrapper(pageScrapper);
         crawler.setPagesScrapper(pagesScrapper);
         iCrawler=mock(ICrawler.class);
@@ -95,26 +98,26 @@ public class CrawlerTest {
     /*Check if the URL is the same*/
     @Test
     public void URL()throws IOException{
-        assertEquals(crawler.BaseURL,"http://localhost:80");
+        assertEquals(crawler.BaseURL,"http://localhost:88");
     }
 
     @Test(expected = NullPointerException.class)
     public void getAllUsesPagesCrawlerGetCategoryLinks() throws IOException {
 
-        when(pagesScrapper.getLinksOfCategory("http://localhost:80")).thenReturn(NullValue);
+        when(pagesScrapper.getLinksOfCategory("http://localhost:88")).thenReturn(NullValue);
 
         crawler.GetAllContents();
-        verify(pagesScrapper).getLinksOfCategory("http://localhost:80");
+        verify(pagesScrapper).getLinksOfCategory("http://localhost:88");
 
     }
 
     @Test
     public void getSpecificItemCallsPagesCrawler() throws IOException {
 
-        when(pagesScrapper.getSpecificItems("http://localhost:80","TLOTR")).thenReturn("{name = TLOTR}");
+        when(pagesScrapper.getSpecificItems("http://localhost:88","TLOTR")).thenReturn("{name = TLOTR}");
 
         crawler.getSepcificItems("TLOTR");
-        verify(pagesScrapper).getSpecificItems("http://localhost:80","TLOTR");
+        verify(pagesScrapper).getSpecificItems("http://localhost:88","TLOTR");
 
     }
 //    @Test
@@ -130,13 +133,12 @@ public class CrawlerTest {
     public void getSpecificItemWithParams(String url , String name, String response) throws IOException {
         when(pagesScrapper.getSpecificItems(url,name)).thenReturn(response);
         crawler.getSepcificItems(name);
-        verify(pagesScrapper).getSpecificItems("http://localhost:80",name);
+        verify(pagesScrapper).getSpecificItems("http://localhost:88",name);
     }
     /*
    Get all items tests (REST)
      */
 
-    /*crawlerMethodForAllIsCalledOnlyOnce*/
     @Test
     public void getAllItemsTest() throws IOException{
 
@@ -148,19 +150,16 @@ public class CrawlerTest {
         verify(iCrawler,times(2)).GetAllContents();
 
     }
-    /*this is to verify serializerListOfJson is called only once*/
     @Test
 
     public void SerlizerListToJsonTest() throws IOException{
 
         //arrange
-        when(iSerializer.ListOfMediaToJson(iCrawler.GetAllContents())).thenReturn("{ id = 1 }");
-
+        when(iSerializer.ListOfMediaToJson(iCrawler.GetAllContents())).thenReturn(Correct_Value);
         //act
         service.getAll();
-
         //assert
-        verify(iSerializer).ListOfMediaToJson(crawler.GetAllContents());
+        verify(iSerializer).ListOfMediaToJson(iCrawler.GetAllContents());
 
     }
 
@@ -192,12 +191,12 @@ public class CrawlerTest {
     public void GetAllItemsResults() throws IOException{
 
         //arrange
-        when(iSerializer.ListOfMediaToJson(iCrawler.GetAllContents())).thenReturn("{ id = 1 }");
+        when(iSerializer.ListOfMediaToJson(iCrawler.GetAllContents())).thenReturn(Correct_Value);
         //act
         Response response;
         response=service.getAll();
         //assert
-        assertEquals("the expected result is :"+"{ id = 1 }"+ "was :"+response.toString(),"{ id = 1 }"+response.getEntity());
+        assertEquals("the expected result is :"+Correct_Value+ "was :"+response.getEntity(),Correct_Value,response.getEntity());
 
 
     }
@@ -211,7 +210,7 @@ public class CrawlerTest {
         //act
         Response response;
         response=service.getAll();
-        Assert.assertEquals("The expected result is:" + expectedResult + " was: " + response.toString(), "", response.getEntity() );
+        Assert.assertEquals("The expected result is:" + expectedResult + " was: " + response.toString(), expectedResult, response.getEntity() );
 
 
     }
@@ -223,10 +222,9 @@ public class CrawlerTest {
      */
 
 
-    /*this is to test that getStaticsInformation is called only once*/
     @Test
 
-    public void SerializerGetSpecificaCalledOnlyOnce() throws IOException{
+    public void SerializerGetSpecificaCall() throws IOException{
 
         //arrange
 
@@ -276,7 +274,7 @@ public class CrawlerTest {
         //act
         Response response;
         response=service.getItem(input);
-        Assert.assertEquals("The expected result is:" + output + " was: " + response.toString(), "", response.getEntity() );
+        Assert.assertEquals("The expected result is:" + output + " was: " + response.toString(), output, response.getEntity() );
 
 
     }
@@ -344,14 +342,14 @@ public class CrawlerTest {
     }
     @Test
     @Parameters(method = "getMediaData")
-    public void getStatsReturnsProperResultWithParams(int input, String Output){
+    public void getInfoResultWithParams(int input, String Output){
         //arrange
         when(iSerializer.MediaDataToJSON(iCrawler.GetItemData(input))).thenReturn(Output);
         Response response;
         //act
         response = service.getDataItemService(input);
         //assert
-        Assert.assertEquals("The expected result is:" + Output + " was: " + response.toString(), "", response.getEntity() );
+        Assert.assertEquals("The expected result is:" + Output + " was: " + response.toString(), Output, response.getEntity() );
     }
 
 
