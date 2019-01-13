@@ -31,6 +31,29 @@ public class CrawlerTest {
     private Service service;
 
 
+    private final Object[] getAllItems() {
+        return $($("{ id = 1 }"),
+                $("{ id = 2 }")
+
+        );
+    }
+    private static final Object[] getSpecificResults(){
+        return $(
+                $("{ id = 1}", "{ name = Books}"),
+                $("{ id = 2}","{ name = movie}"),
+                $("{ id = 3}","{ name = Music}")
+        );
+    }
+
+    private static final Object[] getMediaData(){
+        return $(
+                $(1, "{ time = 123}"),
+                $( 2,"{ time = 312}"),
+                $(3,"{ time = 231}")
+        );
+    }
+
+
     private final Object[] getSpecific(){
         return  $($("http://localhost:80","imran","{name = imran}"),
                 $("http://localhost:80","khan","{name = khan}")
@@ -166,7 +189,7 @@ public class CrawlerTest {
     }
     /* this method will test the final proper results of this method*/
     @Test
-    public void GetAllItemsShouldReturnProperResults() throws IOException{
+    public void GetAllItemsResults() throws IOException{
 
         //arrange
         when(iSerializer.ListOfMediaToJson(iCrawler.GetAllContents())).thenReturn("{ id = 1 }");
@@ -180,11 +203,18 @@ public class CrawlerTest {
     }
 
     /*in this method parameters will be passed to the test method*/
-//    @Test
-//    @Parameters(method="getAllItems")
-//    public void GetAllItemsShouldReturnProperResultsWithParameters(String expectedResult) throws IOException{
-//
-//    }
+    @Test
+    @Parameters(method="getAllItems")
+    public void GetAllItemsResultsWithParameters(String expectedResult) throws IOException{
+        //arrange
+        when(iSerializer.ListOfMediaToJson(iCrawler.GetAllContents())).thenReturn(expectedResult);
+        //act
+        Response response;
+        response=service.getAll();
+        Assert.assertEquals("The expected result is:" + expectedResult + " was: " + response.toString(), "", response.getEntity() );
+
+
+    }
 
 
 
@@ -227,13 +257,26 @@ public class CrawlerTest {
 
     /* this method will test the final proper results of this method*/
     @Test
-    public void GetSpecificItemsShouldReturnProperResults() throws IOException{
+    public void GetSpecificItemsrResults() throws IOException{
         when(iSerializer.MediaToJson(crawler.getSepcificItems("Book"))).thenReturn("{ name=Book }");
         Response resonse;
 
         //act
         resonse=service.getItem("Book");
         Assert.assertEquals("The expected result is:" + "{ name=Book }" + " was: " + resonse.toString(), "{ name=Book }" , resonse.getEntity() );
+
+
+    }
+    /*in this method parameters will be passed to the test method*/
+    @Test
+    @Parameters(method="getSpecificResults")
+    public void GetSpecificItemsResultsWithParameters(String input,String output) throws IOException{
+        //arrange
+        when(iSerializer.MediaToJson(iCrawler.getSepcificItems(input))).thenReturn(output);
+        //act
+        Response response;
+        response=service.getItem(input);
+        Assert.assertEquals("The expected result is:" + output + " was: " + response.toString(), "", response.getEntity() );
 
 
     }
@@ -287,7 +330,7 @@ public class CrawlerTest {
 
     /* this method will test the final proper results of getItemsData*/
     @Test
-    public void GetItemsDataShouldReturnProperResults() throws IOException{
+    public void GetItemsDataResults() throws IOException{
 
         //arrange
         when(iSerializer.MediaDataToJSON(iCrawler.GetItemData(1))).thenReturn("{ time=123 }");
@@ -298,6 +341,17 @@ public class CrawlerTest {
         Assert.assertEquals("The expected result is:" + "{ time=123 }" + " was: " + response.toString(), "{ time=123 }", response.getEntity() );
 
 
+    }
+    @Test
+    @Parameters(method = "getMediaData")
+    public void getStatsReturnsProperResultWithParams(int input, String Output){
+        //arrange
+        when(iSerializer.MediaDataToJSON(iCrawler.GetItemData(input))).thenReturn(Output);
+        Response response;
+        //act
+        response = service.getDataItemService(input);
+        //assert
+        Assert.assertEquals("The expected result is:" + Output + " was: " + response.toString(), "", response.getEntity() );
     }
 
 

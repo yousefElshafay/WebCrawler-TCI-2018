@@ -7,13 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b4d4932-1cb2-48dc-a985-4eed22ff4bdd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service/src/ScrappingService/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/Service/src/ScrappingService/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Service/ScrappingService/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Service/ScrappingService/Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/CrawlerTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CrawlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CrawlerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -100,13 +93,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="1" />
-          <entry key="java" value="363" />
+          <entry key="java" value="544" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="363" />
+          <entry key="JAVA" value="544" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -128,8 +121,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/CrawlerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="298" lean-forward="true" selection-start-line="298" selection-end-line="298" />
+            <state relative-caret-position="299">
+              <caret line="344" column="4" selection-start-line="344" selection-start-column="4" selection-end-line="344" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -598,7 +591,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1" />
     <option name="y" value="1" />
     <option name="width" value="1364" />
@@ -713,7 +706,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547398043562" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547399461641" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15527344" />
@@ -732,15 +725,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CrawlerTest">
-    <configuration name="CrawlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Crawler_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CrawlerTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.CrawlerTest.getStatsReturnsProperResultWithParams">
     <configuration name="CrawlerTest.CrawlerServiceThrowsExceptionWhenResultsAreEmptyString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Crawler_test" />
       <option name="PACKAGE_NAME" value="" />
@@ -761,21 +746,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CrawlerTest.SerlizerListToJsonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CrawlerTest.GetAllItemsShouldReturnProperResultsWithParameters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Crawler_test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CrawlerTest" />
-      <option name="METHOD_NAME" value="SerlizerListToJsonTest" />
+      <option name="METHOD_NAME" value="GetAllItemsShouldReturnProperResultsWithParameters" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CrawlerTest.getSpecificItemWithParams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CrawlerTest.GetSpecificItemsResultsWithParameters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Crawler_test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CrawlerTest" />
-      <option name="METHOD_NAME" value="getSpecificItemWithParams" />
+      <option name="METHOD_NAME" value="GetSpecificItemsResultsWithParameters" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CrawlerTest.getStatsReturnsProperResultWithParams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Crawler_test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CrawlerTest" />
+      <option name="METHOD_NAME" value="getStatsReturnsProperResultWithParams" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -927,19 +922,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.rest" />
-      <item itemvalue="JUnit.CrawlerTest.SerlizerListToJsonTest" />
-      <item itemvalue="JUnit.CrawlerTest" />
       <item itemvalue="JUnit.CrawlerTest.CrawlerServiceThrowsExceptionWhenResultsAreEmptyString" />
-      <item itemvalue="JUnit.CrawlerTest.getSpecificItemWithParams" />
       <item itemvalue="JUnit.CrawlerTest.GetAllItemsShouldReturnProperResults" />
+      <item itemvalue="JUnit.CrawlerTest.GetAllItemsShouldReturnProperResultsWithParameters" />
+      <item itemvalue="JUnit.CrawlerTest.GetSpecificItemsResultsWithParameters" />
+      <item itemvalue="JUnit.CrawlerTest.getStatsReturnsProperResultWithParams" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CrawlerTest" />
-        <item itemvalue="JUnit.CrawlerTest.CrawlerServiceThrowsExceptionWhenResultsAreEmptyString" />
+        <item itemvalue="JUnit.CrawlerTest.getStatsReturnsProperResultWithParams" />
+        <item itemvalue="JUnit.CrawlerTest.GetSpecificItemsResultsWithParameters" />
+        <item itemvalue="JUnit.CrawlerTest.GetAllItemsShouldReturnProperResultsWithParameters" />
         <item itemvalue="JUnit.CrawlerTest.GetAllItemsShouldReturnProperResults" />
-        <item itemvalue="JUnit.CrawlerTest.SerlizerListToJsonTest" />
-        <item itemvalue="JUnit.CrawlerTest.getSpecificItemWithParams" />
+        <item itemvalue="JUnit.CrawlerTest.CrawlerServiceThrowsExceptionWhenResultsAreEmptyString" />
       </list>
     </recent_temporary>
   </component>
@@ -963,32 +958,11 @@
       <workItem from="1547216448753" duration="3900000" />
       <workItem from="1547319883483" duration="3159000" />
       <workItem from="1547324130811" duration="211000" />
-      <workItem from="1547394821122" duration="3072000" />
+      <workItem from="1547394821122" duration="4205000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CrawlerTest_getAllItemsTest - 2019.01.13 at 08h 40m 02s.xml">
-      <configuration name="CrawlerTest.getAllItemsTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CrawlerTest - 2019.01.13 at 08h 42m 33s.xml">
-      <configuration name="CrawlerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CrawlerTest_CrawlerServiceThrowsExceptionWhenResultsAreEmptyString - 2019.01.13 at 08h 44m 05s.xml">
-      <configuration name="CrawlerTest.CrawlerServiceThrowsExceptionWhenResultsAreEmptyString" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CrawlerTest_CrawlerServiceThrowsExceptionWhenResultsAreEmptyString - 2019.01.13 at 08h 44m 23s.xml">
-      <configuration name="CrawlerTest.CrawlerServiceThrowsExceptionWhenResultsAreEmptyString" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CrawlerTest_getSpecificItemWithParams - 2019.01.13 at 08h 44m 37s.xml">
-      <configuration name="CrawlerTest.getSpecificItemWithParams" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CrawlerTest_SerlizerListToJsonTest - 2019.01.13 at 08h 44m 56s.xml">
-      <configuration name="CrawlerTest.SerlizerListToJsonTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CrawlerTest_GetAllItemsShouldReturnProperResults - 2019.01.13 at 08h 45m 18s.xml">
-      <configuration name="CrawlerTest.GetAllItemsShouldReturnProperResults" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CrawlerTest - 2019.01.13 at 08h 45m 40s.xml">
       <configuration name="CrawlerTest" configurationId="JUnit" />
     </history-entry>
@@ -998,12 +972,33 @@
     <history-entry file="CrawlerTest - 2019.01.13 at 08h 46m 31s.xml">
       <configuration name="CrawlerTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CrawlerTest_CrawlerServiceThrowsExceptionWhenResultsAreEmptyString - 2019.01.13 at 08h 51m 37s.xml">
+      <configuration name="CrawlerTest.CrawlerServiceThrowsExceptionWhenResultsAreEmptyString" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CrawlerTest_GetAllItemsShouldReturnProperResultsWithParameters - 2019.01.13 at 08h 54m 49s.xml">
+      <configuration name="CrawlerTest.GetAllItemsShouldReturnProperResultsWithParameters" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CrawlerTest_GetAllItemsShouldReturnProperResults - 2019.01.13 at 08h 57m 16s.xml">
+      <configuration name="CrawlerTest.GetAllItemsShouldReturnProperResults" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CrawlerTest_GetAllItemsShouldReturnProperResultsWithParameters - 2019.01.13 at 08h 57m 33s.xml">
+      <configuration name="CrawlerTest.GetAllItemsShouldReturnProperResultsWithParameters" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CrawlerTest_GetAllItemsShouldReturnProperResultsWithParameters - 2019.01.13 at 08h 59m 34s.xml">
+      <configuration name="CrawlerTest.GetAllItemsShouldReturnProperResultsWithParameters" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CrawlerTest_GetAllItemsShouldReturnProperResultsWithParameters - 2019.01.13 at 09h 00m 07s.xml">
+      <configuration name="CrawlerTest.GetAllItemsShouldReturnProperResultsWithParameters" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CrawlerTest_GetSpecificItemsResultsWithParameters - 2019.01.13 at 09h 05m 43s.xml">
+      <configuration name="CrawlerTest.GetSpecificItemsResultsWithParameters" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14549000" />
+    <option name="totallyTimeSpent" value="15682000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28668684" />
@@ -1040,7 +1035,7 @@
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="Bean Validation" order="10" />
+      <window_info anchor="right" id="Bean Validation" order="10" weight="0.32980332" />
       <window_info anchor="right" id="CDI" order="11" weight="0.32980332" />
     </layout>
     <layout-to-restore>
@@ -1230,8 +1225,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CrawlerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="298" lean-forward="true" selection-start-line="298" selection-end-line="298" />
+        <state relative-caret-position="299">
+          <caret line="344" column="4" selection-start-line="344" selection-start-column="4" selection-end-line="344" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
