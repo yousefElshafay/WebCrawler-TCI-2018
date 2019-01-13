@@ -1,3 +1,4 @@
+import Handler.MediaData;
 import Interface.ICrawler;
 import Interface.ISerializer;
 import Scrapper.Crawler;
@@ -24,7 +25,15 @@ public class CrawlerTest {
 
     private static final List<String> NullValue=null;
     private static final String Correct_Value="{ id = 1 }";
-
+    private static final String Emp_String="";
+    private static final String valid_name="TLOTR";
+    private static final String valid_name_RESPONSE="{ name = TLOTR}";
+    private static final String URL="http://localhost:88";
+    private static final String Search_Value="Music";
+    private static final String Search_Value_Result="{ name = Music }";
+    private static final int Correct_ID=1;
+    private static final int Incorrect_ID=-21;
+    private static final String MediaDataOutPut="{ time = 222 }";
     private Crawler crawler;
     private PageScrapper pageScrapper;
     private PagesScrapper pagesScrapper;
@@ -85,7 +94,7 @@ public class CrawlerTest {
     @Test(expected = IndexOutOfBoundsException.class)
     public void throwsExceptionWhenIDIsInvalid() throws IOException {
 
-        crawler.GetItemData(-69);
+        crawler.GetItemData(Incorrect_ID);
 
     }
 
@@ -98,26 +107,26 @@ public class CrawlerTest {
     /*Check if the URL is the same*/
     @Test
     public void URL()throws IOException{
-        assertEquals(crawler.BaseURL,"http://localhost:88");
+        assertEquals(crawler.BaseURL,URL);
     }
 
     @Test(expected = NullPointerException.class)
     public void getAllUsesPagesCrawlerGetCategoryLinks() throws IOException {
 
-        when(pagesScrapper.getLinksOfCategory("http://localhost:88")).thenReturn(NullValue);
+        when(pagesScrapper.getLinksOfCategory(URL)).thenReturn(NullValue);
 
         crawler.GetAllContents();
-        verify(pagesScrapper).getLinksOfCategory("http://localhost:88");
+        verify(pagesScrapper).getLinksOfCategory(URL);
 
     }
 
     @Test
     public void getSpecificItemCallsPagesCrawler() throws IOException {
 
-        when(pagesScrapper.getSpecificItems("http://localhost:88","TLOTR")).thenReturn("{name = TLOTR}");
+        when(pagesScrapper.getSpecificItems(URL,valid_name)).thenReturn(valid_name_RESPONSE);
 
-        crawler.getSepcificItems("TLOTR");
-        verify(pagesScrapper).getSpecificItems("http://localhost:88","TLOTR");
+        crawler.getSepcificItems(valid_name);
+        verify(pagesScrapper).getSpecificItems(URL,valid_name);
 
     }
 //    @Test
@@ -133,7 +142,7 @@ public class CrawlerTest {
     public void getSpecificItemWithParams(String url , String name, String response) throws IOException {
         when(pagesScrapper.getSpecificItems(url,name)).thenReturn(response);
         crawler.getSepcificItems(name);
-        verify(pagesScrapper).getSpecificItems("http://localhost:88",name);
+        verify(pagesScrapper).getSpecificItems(URL,name);
     }
     /*
    Get all items tests (REST)
@@ -143,7 +152,7 @@ public class CrawlerTest {
     public void getAllItemsTest() throws IOException{
 
         //arrange
-        when(iSerializer.ListOfMediaToJson(iCrawler.GetAllContents())).thenReturn("{ id = 1}");
+        when(iSerializer.ListOfMediaToJson(iCrawler.GetAllContents())).thenReturn(Correct_Value);
         //act
         service.getAll();
         //assert
@@ -182,7 +191,7 @@ public class CrawlerTest {
     @Test(expected =InternalServerErrorException.class )
     public void CrawlerServiceThrowsExceptionWhenResultsAreEmptyString() throws IOException{
 
-        when(iSerializer.ListOfMediaToJson(iCrawler.GetAllContents())).thenReturn("");
+        when(iSerializer.ListOfMediaToJson(iCrawler.GetAllContents())).thenReturn(Emp_String);
         service.getAll();
 
     }
@@ -228,11 +237,11 @@ public class CrawlerTest {
 
         //arrange
 
-        when(iSerializer.MediaToJson(crawler.getSepcificItems("Books"))).thenReturn("{ name = Books }");
+        when(iSerializer.MediaToJson(crawler.getSepcificItems(Search_Value))).thenReturn(Search_Value_Result);
         //act
-        service.getItem("Books");
+        service.getItem(Search_Value);
         //assert
-        verify(iSerializer).MediaToJson(crawler.getSepcificItems("Books"));
+        verify(iSerializer).MediaToJson(crawler.getSepcificItems(Search_Value));
 
     }
 
@@ -240,7 +249,7 @@ public class CrawlerTest {
     @Test(expected =InternalServerErrorException.class )
     public void CrawlerServiceGetSpecificThrowsExceptionWhenResultsAreNull() throws IOException{
 
-        when(iSerializer.MediaToJson(iCrawler.getSepcificItems("Book"))).thenReturn(null);
+        when(iSerializer.MediaToJson(iCrawler.getSepcificItems(Search_Value))).thenReturn(null);
         service.getAll();
 
     }
@@ -249,19 +258,19 @@ public class CrawlerTest {
     public void CrawlerServiceGetSpecificThrowsExceptionWhenResultsAreEmptyString() throws IOException{
 
 
-        service.getItem("");
+        service.getItem(Emp_String);
 
     }
 
     /* this method will test the final proper results of this method*/
     @Test
     public void GetSpecificItemsrResults() throws IOException{
-        when(iSerializer.MediaToJson(crawler.getSepcificItems("Book"))).thenReturn("{ name=Book }");
+        when(iSerializer.MediaToJson(crawler.getSepcificItems(Search_Value))).thenReturn(Search_Value_Result);
         Response resonse;
 
         //act
-        resonse=service.getItem("Book");
-        Assert.assertEquals("The expected result is:" + "{ name=Book }" + " was: " + resonse.toString(), "{ name=Book }" , resonse.getEntity() );
+        resonse=service.getItem(Search_Value);
+        Assert.assertEquals("The expected result is:" + Search_Value_Result + " was: " + resonse.toString(), Search_Value_Result , resonse.getEntity() );
 
 
     }
@@ -279,11 +288,6 @@ public class CrawlerTest {
 
     }
 
-//    @Test
-//    @Parameters(method="getSpecificItems")
-//    public void GetAllItemsShouldReturnProperResultsWithParameters(String input,String outPut) throws IOException{
-//
-//    }
 
       /*
    Get all information about mediaDataSearch Tests
@@ -292,10 +296,10 @@ public class CrawlerTest {
     @Test
     public void CrawlerFunctionForSingleItemIsCalledOnce() throws IOException{
         //arrange
-        when(iSerializer.MediaDataToJSON(iCrawler.GetItemData(1))).thenReturn("{time=123}");
+        when(iSerializer.MediaDataToJSON(iCrawler.GetItemData(Correct_ID))).thenReturn(MediaDataOutPut);
         //act
-        service.getDataItemService(1);
-        verify(iCrawler,times(2)).GetItemData(1);
+        service.getDataItemService(Correct_ID);
+        verify(iCrawler,times(2)).GetItemData(Correct_ID);
 
         
     }
@@ -304,26 +308,26 @@ public class CrawlerTest {
     public void SerializerGetItemDataIsCalledOnce() throws IOException{
 
 
-        when(iSerializer.MediaDataToJSON(iCrawler.GetItemData(1))).thenReturn("{ time=123 }");
-        service.getDataItemService(1);
+        when(iSerializer.MediaDataToJSON(iCrawler.GetItemData(Correct_ID))).thenReturn(MediaDataOutPut);
+        service.getDataItemService(Correct_ID);
 
-        verify(iSerializer).MediaDataToJSON(iCrawler.GetItemData(1));
+        verify(iSerializer).MediaDataToJSON(iCrawler.GetItemData(Correct_ID));
     }
     /* this method is to test whether a exception is thrown or not when the results  are null*/
     @Test(expected =InternalServerErrorException.class )
     public void CrawlerServiceGetItemsDataThrowsExceptionWhenResultsAreNull() throws IOException{
 
         //arrange
-        when(iSerializer.MediaDataToJSON(iCrawler.GetItemData(1))).thenReturn(null);
+        when(iSerializer.MediaDataToJSON(iCrawler.GetItemData(Correct_ID))).thenReturn(null);
         //act
-        service.getDataItemService(1);
+        service.getDataItemService(Correct_ID);
     }
 
     //when id is wrong illeagle argument exception is expected
     @Test(expected = IllegalArgumentException.class)
     public void getItemsDataThrowsIllegalArgumentException(){
         //act
-        service.getDataItemService(-69);
+        service.getDataItemService(Incorrect_ID);
     }
 
     /* this method will test the final proper results of getItemsData*/
@@ -331,12 +335,12 @@ public class CrawlerTest {
     public void GetItemsDataResults() throws IOException{
 
         //arrange
-        when(iSerializer.MediaDataToJSON(iCrawler.GetItemData(1))).thenReturn("{ time=123 }");
+        when(iSerializer.MediaDataToJSON(iCrawler.GetItemData(Correct_ID))).thenReturn(MediaDataOutPut);
         Response response;
         //act
-        response = service.getDataItemService(1);
+        response = service.getDataItemService(Correct_ID);
         //assert
-        Assert.assertEquals("The expected result is:" + "{ time=123 }" + " was: " + response.toString(), "{ time=123 }", response.getEntity() );
+        Assert.assertEquals("The expected result is:" + MediaDataOutPut + " was: " + response.toString(), MediaDataOutPut, response.getEntity() );
 
 
     }
