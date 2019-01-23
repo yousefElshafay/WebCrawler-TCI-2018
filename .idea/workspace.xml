@@ -5,177 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b4d4932-1cb2-48dc-a985-4eed22ff4bdd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/Handler/ItemsDataInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/Handler/MediaData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/Handler/Serializer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/Interface/ICrawler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/Interface/ISerializer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/Interface/IitemsDataInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/MediaLibrary/Books.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/MediaLibrary/Media.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/MediaLibrary/Music.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/Scrapper/Crawler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/Scrapper/PageScrapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/Scrapper/PagesScrapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/classes/Handler/Algorithm.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/classes/Handler/MediaData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/classes/Handler/Serializer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/classes/Interface/IAlgorithm.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/classes/Interface/ICrawler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/classes/Interface/ISerializer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/classes/MediaLibrary/Books.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/classes/MediaLibrary/Media.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/classes/MediaLibrary/Movies.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/classes/MediaLibrary/Music.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/classes/Scrapper/Crawler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/classes/Scrapper/PageScrapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/classes/Scrapper/PagesScrapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/classes/ScrappingService/Service.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/FastInoset.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/aopalliance-repackaged-2.5.0-b42.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/api-java-2.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/cdi-api-1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/el-api-2.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/gmbal-api-only.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/gson-2.8.2-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/gson-2.8.2-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/gson-2.8.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/ha-api.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/hk2-api-2.5.0-b42.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/hk2-locator-2.5.0-b42.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/hk2-utils-2.5.0-b42.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/javassist-3.22.0-CR2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/javax.annotation-api-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/javax.annotation.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/javax.inject-1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/javax.inject-2.5.0-b42.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/javax.json-1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/javax.json-api-1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/javax.json.bind-api-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/javax.servlet-api-3.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/javax.ws.rs-api-2.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/javax.ws.rs-api-2.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/jaxb-api-2.2.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/jaxb-api.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/jaxb-impl.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/jaxb-xjc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/jaxws-api.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/jaxws-rt.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/jaxws-tools.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/jersey-client.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/jersey-common.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/jersey-container-servlet-core.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/jersey-container-servlet.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/jersey-hk2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/jersey-media-jaxb.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/jersey-media-json-binding.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/jersey-media-sse.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/jersey-server.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/json-20180130.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/jsr181-api.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/jsr250-api-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/mail.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/management-api.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/mimepull.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/mysql-connector-java-5.1.46.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/okhttp-3.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/org.osgi.core-4.2.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/osgi-resource-locator-1.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/persistence-api-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/policy.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/saaj-api.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/saaj-impl.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/stax-ex.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/stax2-api.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/streambuffer.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/validation-api-1.1.0.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/woodstox-core-asl.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/lib/yasson-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/sun-jaxws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Service_war_exploded/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Service/ScrappingService/Service.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/Handler/ItemsDataInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/Handler/MediaData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/Handler/Serializer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/Interface/ICrawler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/Interface/ISerializer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/Interface/IitemsDataInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/MediaLibrary/Books.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/MediaLibrary/Media.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/MediaLibrary/Movies.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/MediaLibrary/Music.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/Scrapper/Crawler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/Scrapper/PageScrapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/Scrapper/PagesScrapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/BookTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/CrawlerTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/MoviesTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/MusicTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileContent/annotation-processors.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileContent/annotation-processors.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service/Service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Service/Service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service/src/ScrappingService/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/Service/src/ScrappingService/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Service/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Algorithm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Books.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Crawler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/IAlgorithm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ICrawler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ISerializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Media.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MediaData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Movies.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/MediaLibrary/Movies.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Music.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/PageScrapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/PagesScrapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Serializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/BookAssert.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/BookTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/CrawlerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/MoviesAsssert.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/MoviesTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/MusicAssert.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/MusicTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/Crawler-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Crawler-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/BookAssert.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/BookTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/CrawlerTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/MoviesTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/MusicTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-BookAssert.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-BookTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-CrawlerTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-MoviesTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-MusicTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_4910420899218055685_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Handler/Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Handler/ItemsDataInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Handler/MediaData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Handler/MediaData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interface/IAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interface/IitemsDataInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interface/ICrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interface/ICrawler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Scrapper/Crawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scrapper/Crawler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Scrapper/PageScrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scrapper/PageScrapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Scrapper/PagesScrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scrapper/PagesScrapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CrawlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CrawlerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -231,8 +61,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/CrawlerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="369" column="84" selection-start-line="369" selection-start-column="84" selection-end-line="369" selection-end-column="84" />
+            <state relative-caret-position="152">
+              <caret line="361" column="43" selection-start-line="361" selection-start-column="43" selection-end-line="361" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -513,7 +343,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548256820930" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548257143200" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -547,26 +377,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CrawlerTest.GetItemsUrlShouldThrowsNullPointerException">
-    <configuration name="WebCrawler-TCI-2018 [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="JUnit.CrawlerTest.CrawlerServiceGetItemsDataThrowsExceptionWhenResultsAreEmptyStrings">
     <configuration name="WebCrawler-TCI-2018 [testClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -595,6 +406,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CrawlerTest.CrawlerServiceGetItemsDataThrowsExceptionWhenResultsAreEmptyStrings" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Crawler_test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CrawlerTest" />
+      <option name="METHOD_NAME" value="CrawlerServiceGetItemsDataThrowsExceptionWhenResultsAreEmptyStrings" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CrawlerTest.GetAllItemsResultsWithParameters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Crawler_test" />
       <option name="PACKAGE_NAME" value="" />
@@ -616,19 +437,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.WebCrawler-TCI-2018 [clean]" />
       <item itemvalue="JUnit.CrawlerTest" />
       <item itemvalue="Gradle.WebCrawler-TCI-2018 [testClasses]" />
       <item itemvalue="JUnit.CrawlerTest.GetAllItemsResultsWithParameters" />
       <item itemvalue="JUnit.CrawlerTest.GetItemsUrlShouldThrowsNullPointerException" />
+      <item itemvalue="JUnit.CrawlerTest.CrawlerServiceGetItemsDataThrowsExceptionWhenResultsAreEmptyStrings" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CrawlerTest.CrawlerServiceGetItemsDataThrowsExceptionWhenResultsAreEmptyStrings" />
         <item itemvalue="JUnit.CrawlerTest.GetItemsUrlShouldThrowsNullPointerException" />
         <item itemvalue="JUnit.CrawlerTest.GetAllItemsResultsWithParameters" />
         <item itemvalue="JUnit.CrawlerTest" />
         <item itemvalue="Gradle.WebCrawler-TCI-2018 [testClasses]" />
-        <item itemvalue="Gradle.WebCrawler-TCI-2018 [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -650,7 +471,7 @@
       <workItem from="1547036462591" duration="293000" />
       <workItem from="1547220958110" duration="377000" />
       <workItem from="1547254063894" duration="3994000" />
-      <workItem from="1548111787881" duration="6001000" />
+      <workItem from="1548111787881" duration="6256000" />
     </task>
     <task id="LOCAL-00001" summary="basic test cases">
       <created>1547254780396</created>
@@ -778,13 +599,17 @@
       <option name="project" value="LOCAL" />
       <updated>1547260035728</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Merge branches 'master' and 'youssefElshafayFinal' of https://github.com/yousefElshafay/WebCrawler-TCI-2018 into youssefElshafayFinal&#10;&#10;# Conflicts:&#10;#&#9;.gradle/4.8/fileHashes/fileHashes.bin&#10;#&#9;.gradle/4.8/fileHashes/fileHashes.lock&#10;#&#9;.idea/workspace.xml&#10;&#10;Add test getitemurl method from page scraper  exception">
+      <created>1548256915759</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1548256915759</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MusicTest - 2019.01.12 at 03h 26m 57s.xml">
-      <configuration name="MusicTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CrawlerTest - 2019.01.13 at 12h 57m 17s.xml">
       <configuration name="CrawlerTest" configurationId="JUnit" />
     </history-entry>
@@ -812,9 +637,12 @@
     <history-entry file="CrawlerTest_GetAllItemsResultsWithParameters - 2019.01.23 at 16h 17m 12s.xml">
       <configuration name="CrawlerTest.GetAllItemsResultsWithParameters" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CrawlerTest_GetItemsUrlShouldThrowsNullPointerException - 2019.01.23 at 16h 20m 19s.xml">
+      <configuration name="CrawlerTest.GetItemsUrlShouldThrowsNullPointerException" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22047000" />
+    <option name="totallyTimeSpent" value="22302000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -882,7 +710,8 @@
     <MESSAGE value="refactor Movie Test class and all test passes" />
     <MESSAGE value="getartist test fail in Music Test class" />
     <MESSAGE value="get year test fail in Music Test class" />
-    <option name="LAST_COMMIT_MESSAGE" value="get year test fail in Music Test class" />
+    <MESSAGE value="Merge branches 'master' and 'youssefElshafayFinal' of https://github.com/yousefElshafay/WebCrawler-TCI-2018 into youssefElshafayFinal&#10;&#10;# Conflicts:&#10;#&#9;.gradle/4.8/fileHashes/fileHashes.bin&#10;#&#9;.gradle/4.8/fileHashes/fileHashes.lock&#10;#&#9;.idea/workspace.xml&#10;&#10;Add test getitemurl method from page scraper  exception" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branches 'master' and 'youssefElshafayFinal' of https://github.com/yousefElshafay/WebCrawler-TCI-2018 into youssefElshafayFinal&#10;&#10;# Conflicts:&#10;#&#9;.gradle/4.8/fileHashes/fileHashes.bin&#10;#&#9;.gradle/4.8/fileHashes/fileHashes.lock&#10;#&#9;.idea/workspace.xml&#10;&#10;Add test getitemurl method from page scraper  exception" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1056,8 +885,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CrawlerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="369" column="84" selection-start-line="369" selection-start-column="84" selection-end-line="369" selection-end-column="84" />
+        <state relative-caret-position="152">
+          <caret line="361" column="43" selection-start-line="361" selection-start-column="43" selection-end-line="361" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

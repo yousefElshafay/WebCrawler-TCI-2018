@@ -367,7 +367,7 @@ public class CrawlerTest {
         service.getDataItemService(Correct_ID);
     }
 
-    // checking if the pagescrapper returns exception when null paramters is passed 
+    // checking if the pagescrapper returns exception when null paramters is passed
     @Test(expected = NullPointerException.class)
     public void GetItemsUrlShouldThrowsNullPointerException() throws IOException{
         //arrange
@@ -377,5 +377,16 @@ public class CrawlerTest {
         verify(pagesScrapper).getItemsURL(URL);
 
     }
+
+    // get category method pageScrapper  test return type
+    @Test(expected = NullPointerException.class)
+    public void GetCategoryLinks() throws IOException {
+
+        when(pageScrapper.getItemsData(URL)).thenReturn(null);
+        crawler.GetAllContents();
+        verify(pageScrapper).getItemsData(URL);
+
+    }
+
 
 }
