@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b4d4932-1cb2-48dc-a985-4eed22ff4bdd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ScrappingService/ServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Scrapper/PagesScrapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Scrapper/PagesScrapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/CrawlerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/CrawlerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Scrapper/PagesScrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scrapper/PagesScrapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CrawlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CrawlerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -18,7 +22,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Crawler$CrawlerTest.ic" NAME="CrawlerTest Coverage Results" MODIFIED="1547412978259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Crawler$CrawlerTest.ic" NAME="CrawlerTest Coverage Results" MODIFIED="1548278020900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="170" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -58,11 +65,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/CrawlerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="361" column="43" selection-start-line="361" selection-start-column="43" selection-end-line="361" selection-end-column="43" />
+            <state relative-caret-position="-834">
+              <caret line="300" column="34" selection-start-line="300" selection-start-column="16" selection-end-line="300" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,20 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/pl.pragmatists/JUnitParams/1.1.1/c90b5cb0b6fb0c332a3bbb9ea9bb467fb7604cb7/JUnitParams-1.1.1-sources.jar!/junitparams/internal/parameters/ParamsFromMethodCommon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
+            <state relative-caret-position="-344">
               <caret line="63" selection-start-line="63" selection-end-line="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Scrapper/PagesScrapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-493">
-              <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -94,7 +89,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MediaLibrary/Media.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="374">
               <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
             </state>
           </provider>
@@ -103,7 +98,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MediaLibrary/Books.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-225">
+            <state relative-caret-position="-51">
               <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
             </state>
           </provider>
@@ -121,8 +116,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Service/src/ScrappingService/Service.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="26" column="77" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="77" />
+            <state relative-caret-position="102">
+              <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ScrappingService/ServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="92" column="4" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -178,6 +185,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>mock</find>
+      <find>getspecificitem</find>
+      <find>getall</find>
+      <find>service</find>
+      <find>getitem</find>
+      <find>getDataItemService</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -207,7 +219,6 @@
         <option value="$PROJECT_DIR$/src/main/java/Interface/IAlgorithm.java" />
         <option value="$PROJECT_DIR$/src/main/java/Interface/ICrawler.java" />
         <option value="$PROJECT_DIR$/src/main/java/Interface/ISerializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Scrapper/PagesScrapper.java" />
         <option value="$PROJECT_DIR$/src/test/java/BookAssert.java" />
         <option value="$PROJECT_DIR$/src/main/java/MediaLibrary/Music.java" />
         <option value="$PROJECT_DIR$/src/test/java/MediaLibrary/MediaTest.java" />
@@ -218,7 +229,9 @@
         <option value="$PROJECT_DIR$/src/main/java/Handler/IItemsData.java" />
         <option value="$PROJECT_DIR$/src/main/java/Handler/ItemsDataInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/Interface/IitemsDataInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Scrapper/PagesScrapper.java" />
         <option value="$PROJECT_DIR$/src/test/java/CrawlerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ScrappingService/ServiceTest.java" />
       </list>
     </option>
   </component>
@@ -304,22 +317,6 @@
               <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebCrawler-TCI-2018" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="MediaLibrary" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebCrawler-TCI-2018" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Scrapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebCrawler-TCI-2018" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -328,6 +325,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebCrawler-TCI-2018" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ScrappingService" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -343,7 +348,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548257143200" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548281314058" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -359,6 +364,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="ScrappingService" />
       <recent name="MediaLibrary" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -377,79 +383,101 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CrawlerTest.CrawlerServiceGetItemsDataThrowsExceptionWhenResultsAreEmptyStrings">
-    <configuration name="WebCrawler-TCI-2018 [testClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="testClasses" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="CrawlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ServiceTest.getItemException">
+    <configuration name="ServiceTest.getAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Crawler_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CrawlerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CrawlerTest.CrawlerServiceGetItemsDataThrowsExceptionWhenResultsAreEmptyStrings" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Crawler_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CrawlerTest" />
-      <option name="METHOD_NAME" value="CrawlerServiceGetItemsDataThrowsExceptionWhenResultsAreEmptyStrings" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ScrappingService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ScrappingService" />
+      <option name="MAIN_CLASS_NAME" value="ScrappingService.ServiceTest" />
+      <option name="METHOD_NAME" value="getAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CrawlerTest.GetAllItemsResultsWithParameters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ServiceTest.getAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Crawler_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CrawlerTest" />
-      <option name="METHOD_NAME" value="GetAllItemsResultsWithParameters" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ScrappingService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ScrappingService" />
+      <option name="MAIN_CLASS_NAME" value="ScrappingService.ServiceTest" />
+      <option name="METHOD_NAME" value="getAllTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CrawlerTest.GetItemsUrlShouldThrowsNullPointerException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ServiceTest.getAllTestException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Crawler_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CrawlerTest" />
-      <option name="METHOD_NAME" value="GetItemsUrlShouldThrowsNullPointerException" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ScrappingService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ScrappingService" />
+      <option name="MAIN_CLASS_NAME" value="ScrappingService.ServiceTest" />
+      <option name="METHOD_NAME" value="getAllTestException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceTest.getItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Crawler_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ScrappingService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ScrappingService" />
+      <option name="MAIN_CLASS_NAME" value="ScrappingService.ServiceTest" />
+      <option name="METHOD_NAME" value="getItem" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceTest.getItemException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Crawler_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ScrappingService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ScrappingService" />
+      <option name="MAIN_CLASS_NAME" value="ScrappingService.ServiceTest" />
+      <option name="METHOD_NAME" value="getItemException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CrawlerTest" />
-      <item itemvalue="Gradle.WebCrawler-TCI-2018 [testClasses]" />
-      <item itemvalue="JUnit.CrawlerTest.GetAllItemsResultsWithParameters" />
-      <item itemvalue="JUnit.CrawlerTest.GetItemsUrlShouldThrowsNullPointerException" />
-      <item itemvalue="JUnit.CrawlerTest.CrawlerServiceGetItemsDataThrowsExceptionWhenResultsAreEmptyStrings" />
+      <item itemvalue="JUnit.ServiceTest.getAll" />
+      <item itemvalue="JUnit.ServiceTest.getAllTest" />
+      <item itemvalue="JUnit.ServiceTest.getAllTestException" />
+      <item itemvalue="JUnit.ServiceTest.getItem" />
+      <item itemvalue="JUnit.ServiceTest.getItemException" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CrawlerTest.CrawlerServiceGetItemsDataThrowsExceptionWhenResultsAreEmptyStrings" />
-        <item itemvalue="JUnit.CrawlerTest.GetItemsUrlShouldThrowsNullPointerException" />
-        <item itemvalue="JUnit.CrawlerTest.GetAllItemsResultsWithParameters" />
-        <item itemvalue="JUnit.CrawlerTest" />
-        <item itemvalue="Gradle.WebCrawler-TCI-2018 [testClasses]" />
+        <item itemvalue="JUnit.ServiceTest.getItemException" />
+        <item itemvalue="JUnit.ServiceTest.getItem" />
+        <item itemvalue="JUnit.ServiceTest.getAllTestException" />
+        <item itemvalue="JUnit.ServiceTest.getAllTest" />
+        <item itemvalue="JUnit.ServiceTest.getAll" />
       </list>
     </recent_temporary>
   </component>
@@ -471,7 +499,7 @@
       <workItem from="1547036462591" duration="293000" />
       <workItem from="1547220958110" duration="377000" />
       <workItem from="1547254063894" duration="3994000" />
-      <workItem from="1548111787881" duration="6256000" />
+      <workItem from="1548111787881" duration="10383000" />
     </task>
     <task id="LOCAL-00001" summary="basic test cases">
       <created>1547254780396</created>
@@ -606,49 +634,56 @@
       <option name="project" value="LOCAL" />
       <updated>1548256915759</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="get category, getitemdata exception  test class in icrawler,">
+      <created>1548257228490</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1548257228490</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CrawlerTest - 2019.01.13 at 12h 57m 17s.xml">
-      <configuration name="CrawlerTest" configurationId="JUnit" />
+    <history-entry file="ServiceTest_getAllTest - 2019.01.23 at 22h 48m 28s.xml">
+      <configuration name="ServiceTest.getAllTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CrawlerTest - 2019.01.13 at 13h 05m 10s.xml">
-      <configuration name="CrawlerTest" configurationId="JUnit" />
+    <history-entry file="ServiceTest_getAllTestException - 2019.01.23 at 22h 50m 55s.xml">
+      <configuration name="ServiceTest.getAllTestException" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CrawlerTest - 2019.01.22 at 21h 18m 50s.xml">
-      <configuration name="CrawlerTest" configurationId="JUnit" />
+    <history-entry file="ServiceTest_getItem - 2019.01.23 at 22h 54m 10s.xml">
+      <configuration name="ServiceTest.getItem" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CrawlerTest - 2019.01.22 at 21h 19m 32s.xml">
-      <configuration name="CrawlerTest" configurationId="JUnit" />
+    <history-entry file="ServiceTest_getItem - 2019.01.23 at 22h 54m 50s.xml">
+      <configuration name="ServiceTest.getItem" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CrawlerTest_GetAllItemsResultsWithParameters - 2019.01.23 at 16h 03m 20s.xml">
-      <configuration name="CrawlerTest.GetAllItemsResultsWithParameters" configurationId="JUnit" />
+    <history-entry file="ServiceTest_getItem - 2019.01.23 at 22h 56m 11s.xml">
+      <configuration name="ServiceTest.getItem" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CrawlerTest_GetAllItemsResultsWithParameters - 2019.01.23 at 16h 03m 33s.xml">
-      <configuration name="CrawlerTest.GetAllItemsResultsWithParameters" configurationId="JUnit" />
+    <history-entry file="ServiceTest_getItemException - 2019.01.23 at 22h 57m 11s.xml">
+      <configuration name="ServiceTest.getItemException" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CrawlerTest_GetAllItemsResultsWithParameters - 2019.01.23 at 16h 15m 43s.xml">
-      <configuration name="CrawlerTest.GetAllItemsResultsWithParameters" configurationId="JUnit" />
+    <history-entry file="ServiceTest_getItemException - 2019.01.23 at 22h 57m 35s.xml">
+      <configuration name="ServiceTest.getItemException" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CrawlerTest_GetAllItemsResultsWithParameters - 2019.01.23 at 16h 16m 27s.xml">
-      <configuration name="CrawlerTest.GetAllItemsResultsWithParameters" configurationId="JUnit" />
+    <history-entry file="ServiceTest_getItemException - 2019.01.23 at 22h 58m 25s.xml">
+      <configuration name="ServiceTest.getItemException" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CrawlerTest_GetAllItemsResultsWithParameters - 2019.01.23 at 16h 17m 12s.xml">
-      <configuration name="CrawlerTest.GetAllItemsResultsWithParameters" configurationId="JUnit" />
+    <history-entry file="ServiceTest_getItemException - 2019.01.23 at 23h 06m 20s.xml">
+      <configuration name="ServiceTest.getItemException" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CrawlerTest_GetItemsUrlShouldThrowsNullPointerException - 2019.01.23 at 16h 20m 19s.xml">
-      <configuration name="CrawlerTest.GetItemsUrlShouldThrowsNullPointerException" configurationId="JUnit" />
+    <history-entry file="ServiceTest_getItemException - 2019.01.23 at 23h 06m 45s.xml">
+      <configuration name="ServiceTest.getItemException" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22302000" />
+    <option name="totallyTimeSpent" value="26429000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34412956" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34412956" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -656,10 +691,11 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Duplicate detector" weight="0.3285968" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49848714" visible="true" weight="0.29307282" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3989432" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" visible="true" weight="0.29307282" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39786857" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -685,7 +721,7 @@
       <window_info anchor="right" id="Bean Validation" order="10" weight="0.32955465" />
       <window_info anchor="right" id="CDI" order="11" weight="0.32955465" />
       <window_info anchor="right" id="Maven" order="12" weight="0.32955465" />
-      <window_info anchor="right" id="Coverage" order="13" side_tool="true" weight="0.32980332" />
+      <window_info anchor="right" id="Coverage" order="13" side_tool="true" weight="0.32955465" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -711,7 +747,8 @@
     <MESSAGE value="getartist test fail in Music Test class" />
     <MESSAGE value="get year test fail in Music Test class" />
     <MESSAGE value="Merge branches 'master' and 'youssefElshafayFinal' of https://github.com/yousefElshafay/WebCrawler-TCI-2018 into youssefElshafayFinal&#10;&#10;# Conflicts:&#10;#&#9;.gradle/4.8/fileHashes/fileHashes.bin&#10;#&#9;.gradle/4.8/fileHashes/fileHashes.lock&#10;#&#9;.idea/workspace.xml&#10;&#10;Add test getitemurl method from page scraper  exception" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branches 'master' and 'youssefElshafayFinal' of https://github.com/yousefElshafay/WebCrawler-TCI-2018 into youssefElshafayFinal&#10;&#10;# Conflicts:&#10;#&#9;.gradle/4.8/fileHashes/fileHashes.bin&#10;#&#9;.gradle/4.8/fileHashes/fileHashes.lock&#10;#&#9;.idea/workspace.xml&#10;&#10;Add test getitemurl method from page scraper  exception" />
+    <MESSAGE value="get category, getitemdata exception  test class in icrawler," />
+    <option name="LAST_COMMIT_MESSAGE" value="get category, getitemdata exception  test class in icrawler," />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -823,30 +860,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Scrapper/PagesScrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-493">
-          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MediaLibrary/Media.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MediaLibrary/Books.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Scrapper/Crawler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-445">
@@ -859,6 +872,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Scrapper/PagesScrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/pl.pragmatists/JUnitParams/1.1.1/c90b5cb0b6fb0c332a3bbb9ea9bb467fb7604cb7/JUnitParams-1.1.1-sources.jar!/junitparams/internal/parameters/ParamsFromMethodCommon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-344">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MediaLibrary/Media.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MediaLibrary/Books.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BookTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-361">
@@ -868,25 +912,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Service/src/ScrappingService/Service.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="26" column="77" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="77" />
+        <state relative-caret-position="102">
+          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/pl.pragmatists/JUnitParams/1.1.1/c90b5cb0b6fb0c332a3bbb9ea9bb467fb7604cb7/JUnitParams-1.1.1-sources.jar!/junitparams/internal/parameters/ParamsFromMethodCommon.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/CrawlerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="-834">
+          <caret line="300" column="34" selection-start-line="300" selection-start-column="16" selection-end-line="300" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CrawlerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ScrappingService/ServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="361" column="43" selection-start-line="361" selection-start-column="43" selection-end-line="361" selection-end-column="43" />
+        <state relative-caret-position="217">
+          <caret line="92" column="4" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

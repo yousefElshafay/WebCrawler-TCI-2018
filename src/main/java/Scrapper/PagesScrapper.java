@@ -15,22 +15,20 @@ public class PagesScrapper {
     private Queue<String> queueItems;
     private Queue<String> queue;
 
-    public PagesScrapper(){
-     queue = new LinkedList<String>();
-     queueItems = new LinkedList<>();
-}
+    public PagesScrapper() {
+        queue = new LinkedList<String>();
+        queueItems = new LinkedList<>();
+    }
 
 
-
-
-    public List<String> getItemsURL(String baseURL)throws IOException{
+    public List<String> getItemsURL(String baseURL) throws IOException {
 
         List<String> stringList = new ArrayList<>();
 
         Document mydoc = Jsoup.connect(baseURL).get();
 
         Elements itemsUrls = mydoc.select("ul.items li a");
-        for(Element urlItem : itemsUrls) {
+        for (Element urlItem : itemsUrls) {
             // Add item  to the  queue
             stringList.add(urlItem.attr("abs:href"));
         }
@@ -38,9 +36,9 @@ public class PagesScrapper {
         return stringList;
 
 
-
     }
-    public  String getSpecificItems(String url,String name) throws IOException{
+
+    public String getSpecificItems(String url, String name) throws IOException {
 
         StringBuilder toSerialized = new StringBuilder();
 
@@ -56,19 +54,20 @@ public class PagesScrapper {
             Document document = Jsoup.connect(url).get();
             //  to Get  categories
             Elements elements = document.select("ul.nav li a");
-            for(Element lnk : elements) {
+            for (Element lnk : elements) {
                 // Add links to queue
                 queue.add(lnk.attr("abs:href"));
             }
 
-            Result: while(!queue.isEmpty()) {
+            Result:
+            while (!queue.isEmpty()) {
                 String s = queue.remove();
                 SearchedPages++;
 
                 document = Jsoup.connect(s).get();
 
                 Elements UrlsOfItems = document.select("ul.items li a");
-                for(Element itemUrl : UrlsOfItems) {
+                for (Element itemUrl : UrlsOfItems) {
                     // Add item links to queue
                     queueItems.add(itemUrl.attr("abs:href"));
                 }
@@ -86,16 +85,16 @@ public class PagesScrapper {
 
                     String title = document.select(".media-details h1").text();
 
-                    if(!title.equals(name)) {
+                    if (!title.equals(name)) {
                         continue;
                     }
 
                     // Add title to for Serialized
                     toSerialized.append(String.format("itemId: %s, categoryID: %s, title: %s, ", itemId, categoryId, title));
 
-                    Elements tableelements =  document.select("table tbody > tr");
+                    Elements tableelements = document.select("table tbody > tr");
 
-                    for (Element tableElement: tableelements) {
+                    for (Element tableElement : tableelements) {
                         String keyvalue = tableElement.select("th").text();
                         String value = tableElement.select("td").text();
 
@@ -114,7 +113,6 @@ public class PagesScrapper {
         return toSerialized.toString();
 
 
-
     }
 
     public List<String> getLinksOfCategory(String baseURL) throws IOException {
@@ -124,13 +122,11 @@ public class PagesScrapper {
         Document mydoc = Jsoup.connect(baseURL).get();
         // Get links of categories
         Elements categoryLinks = mydoc.select("ul.nav li a");
-        for(Element a : categoryLinks) {
+        for (Element a : categoryLinks) {
             // Add links to the queue
             list.add(a.attr("abs:href"));
         }
 
         return list;
     }
-
-
 }
