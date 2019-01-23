@@ -7,14 +7,14 @@ public class MediaData {
     private  int pages;
 //
 
-    private int searchDepth;
+    private int Depth;
 
 
     public MediaData(int iD, long time, int pages, int searchDepth) {
         this.iD = iD;
         this.time = time;
         this.pages = pages;
-        this.searchDepth = searchDepth;
+        this.Depth = searchDepth;
     }
 
 
@@ -44,10 +44,10 @@ public class MediaData {
     }
 
     public int getSearchDepth() {
-        return searchDepth;
+        return Depth;
     }
 
     public void setSearchDepth(int searchDepth) {
-        this.searchDepth = searchDepth;
+        this.Depth = searchDepth;
     }
 }
